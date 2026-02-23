@@ -10,96 +10,66 @@ from typing import Any
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 
-from api import routes as api_routes
+from api.routes import router
+from core.safety_filter import configure_safety_rules
+from core.simulation_engine import configure_reactions_db
 
-APP_VERSION = "0.1.0"
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 REACTIONS_FILE = DATA_DIR / "reactions.json"
 SAFETY_BLOCKLIST_FILE = DATA_DIR / "safety_blocklist.json"
+APP_VERSION = "1.0.0"
 
+# Explicitly load backend/.env
 load_dotenv(BASE_DIR / ".env")
 
 
 def _parse_cors_origins() -> list[str]:
     env_value = os.getenv("CORS_ORIGINS", "http://localhost:3000")
     origins = [origin.strip() for origin in env_value.split(",") if origin.strip()]
-    if "http://localhost:3000" not in origins:
-        origins.append("http://localhost:3000")
-    return origins
+    return origins or ["http://localhost:3000"]
 
 
 def _load_json_file(path: Path) -> Any:
-
-from api.routes import router
-from core.safety_filter import configure_safety_rules
-from core.simulation_engine import configure_reactions_db
-
-load_dotenv()
-
-BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "data"
-
-
-def _load_json(path: Path):
     with path.open("r", encoding="utf-8") as file:
         return json.load(file)
 
 
-def create_app() -> FastAPI:
-    app = FastAPI(title="Prayog-Shala API", version=APP_VERSION)
+app = FastAPI(title="Prayog-Shala API", version=APP_VERSION)
 
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=_parse_cors_origins(),
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
-
-    @app.on_event("startup")
-    def _startup_load_data() -> None:
-        app.state.reactions_data = _load_json_file(REACTIONS_FILE)
-        app.state.safety_blocklist_data = _load_json_file(SAFETY_BLOCKLIST_FILE)
-
-    @app.get("/api/status")
-    def get_status() -> JSONResponse:
-        reactions_data = getattr(app.state, "reactions_data", None)
-        has_reactions = isinstance(reactions_data, list) and len(reactions_data) > 0
-        return JSONResponse(
-            {
-                "status": "ok",
-                "llm_mode": os.getenv("LLM_MODE", "claude"),
-                "reactions_loaded": has_reactions,
-                "version": APP_VERSION,
-            }
-        )
-
-    router = getattr(api_routes, "router", None)
-    if router is not None:
-        app.include_router(router, prefix="/api")
-
-    return app
-
-
-app = create_app()
-reactions = _load_json(DATA_DIR / "reactions.json")
-safety_rules = _load_json(DATA_DIR / "safety_blocklist.json")
-
-configure_reactions_db(reactions)
-configure_safety_rules(safety_rules)
-
-app = FastAPI(title="Prayog-Shala API", version="1.0.0")
-
-cors_origins = [origin.strip() for origin in os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",") if origin.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=cors_origins,
+    allow_origins=_parse_cors_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.on_event("startup")
+def _startup_load_data() -> None:
+    reactions_data = _load_json_file(REACTIONS_FILE)
+    safety_rules = _load_json_file(SAFETY_BLOCKLIST_FILE)
+
+    app.state.reactions_data = reactions_data
+    app.state.safety_rules = safety_rules
+
+    configure_reactions_db(reactions_data)
+    configure_safety_rules(safety_rules)
+
+
+@app.get("/api/status")
+def get_status() -> dict[str, Any]:
+    reactions_data = getattr(app.state, "reactions_data", {})
+    reactions_loaded = len(reactions_data) if isinstance(reactions_data, (dict, list)) else 0
+
+    return {
+        "status": "ok",
+        "llm_mode": os.getenv("LLM_MODE", "offline"),
+        "reactions_loaded": reactions_loaded,
+        "version": "1.0.0",
+    }
+
 
 app.include_router(router)
