@@ -8,7 +8,7 @@ Read README.md entirely before starting any task.
 1. The safety filter (`safety_filter.py`) MUST run before the NLP parser on every 
    /api/experiment request. No exceptions.
 2. The simulation engine MUST be 100% local — it reads reactions.json only, never calls an LLM.
-3. LLM_MODE env var must cleanly switch behaviour: "claude" | "ollama" | "offline"
+3. LLM_MODE env var must cleanly switch behaviour: "claude" | "ollama" | "groq" | "offline"
 4. All API response shapes must exactly match the JSON contracts in README.md API Reference.
 5. Use the system prompt text from README.md Module Specifications verbatim — do not rewrite them.
 

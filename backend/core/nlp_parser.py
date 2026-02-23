@@ -9,6 +9,7 @@ from typing import Any
 
 import httpx
 from anthropic import AsyncAnthropic
+from groq import AsyncGroq
 
 PARSER_SYSTEM_PROMPT = """You are a chemistry lab assistant that parses student experiment instructions into structured JSON.
 Extract the reactants, action, and conditions from the student's input.
@@ -105,6 +106,21 @@ async def _parse_with_claude(user_input: str) -> dict[str, Any]:
     return _extract_json(content)
 
 
+
+async def _parse_with_groq(user_input: str) -> dict[str, Any]:
+    client = AsyncGroq(api_key=os.getenv("GROQ_API_KEY"))
+    model = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+    response = await client.chat.completions.create(
+        model=model,
+        temperature=0,
+        messages=[
+            {"role": "system", "content": PARSER_SYSTEM_PROMPT},
+            {"role": "user", "content": user_input},
+        ],
+    )
+    content = response.choices[0].message.content or "{}"
+    return _extract_json(content)
+
 async def _parse_with_ollama(user_input: str) -> dict[str, Any]:
     base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     model = os.getenv("OLLAMA_MODEL", "phi3:mini")
@@ -127,7 +143,12 @@ async def parse_experiment(user_input: str) -> dict[str, Any]:
     if llm_mode == "offline":
         return _fallback_regex_parse(user_input)
 
-    parser = _parse_with_claude if llm_mode == "claude" else _parse_with_ollama
+    if llm_mode == "claude":
+        parser = _parse_with_claude
+    elif llm_mode == "groq":
+        parser = _parse_with_groq
+    else:
+        parser = _parse_with_ollama
 
     for attempt in range(2):
         try:
