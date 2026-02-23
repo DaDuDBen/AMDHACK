@@ -1,11 +1,21 @@
 {
   "mg_hcl_001": {
     "reactants_key": "hydrochloric acid|magnesium",
-    "reactants": ["magnesium", "hydrochloric acid"],
-    "products": ["magnesium chloride", "hydrogen gas"],
+    "reactants": [
+      "magnesium",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "magnesium chloride",
+      "hydrogen gas"
+    ],
     "balanced_equation": "Mg + 2HCl → MgCl₂ + H₂↑",
     "type": "single_displacement",
-    "observations": ["effervescence", "magnesium ribbon dissolves", "test tube warms up"],
+    "observations": [
+      "effervescence",
+      "magnesium ribbon dissolves",
+      "test tube warms up"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": "hydrogen",
     "color_change": null,
@@ -16,11 +26,21 @@
   },
   "zn_h2so4_002": {
     "reactants_key": "sulphuric acid|zinc",
-    "reactants": ["zinc", "sulphuric acid"],
-    "products": ["zinc sulphate", "hydrogen gas"],
+    "reactants": [
+      "zinc",
+      "sulphuric acid"
+    ],
+    "products": [
+      "zinc sulphate",
+      "hydrogen gas"
+    ],
     "balanced_equation": "Zn + H₂SO₄ → ZnSO₄ + H₂↑",
     "type": "single_displacement",
-    "observations": ["effervescence", "zinc gradually dissolves", "solution remains colorless"],
+    "observations": [
+      "effervescence",
+      "zinc gradually dissolves",
+      "solution remains colorless"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": "hydrogen",
     "color_change": null,
@@ -31,11 +51,20 @@
   },
   "fe_cuso4_003": {
     "reactants_key": "copper sulphate solution|iron",
-    "reactants": ["iron", "copper sulphate solution"],
-    "products": ["ferrous sulphate", "copper"],
+    "reactants": [
+      "iron",
+      "copper sulphate solution"
+    ],
+    "products": [
+      "ferrous sulphate",
+      "copper"
+    ],
     "balanced_equation": "Fe + CuSO₄ → FeSO₄ + Cu",
     "type": "single_displacement",
-    "observations": ["blue solution turns green", "reddish-brown copper deposits on iron nail"],
+    "observations": [
+      "blue solution turns green",
+      "reddish-brown copper deposits on iron nail"
+    ],
     "thermodynamics": "mild_exothermic",
     "gas_produced": null,
     "color_change": "blue_to_green",
@@ -46,11 +75,21 @@
   },
   "naoh_hcl_004": {
     "reactants_key": "hydrochloric acid|sodium hydroxide",
-    "reactants": ["sodium hydroxide", "hydrochloric acid"],
-    "products": ["sodium chloride", "water"],
+    "reactants": [
+      "sodium hydroxide",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "sodium chloride",
+      "water"
+    ],
     "balanced_equation": "NaOH + HCl → NaCl + H₂O",
     "type": "neutralization",
-    "observations": ["no visible gas", "temperature rises", "solution remains clear"],
+    "observations": [
+      "no visible gas",
+      "temperature rises",
+      "solution remains clear"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": null,
     "color_change": null,
@@ -61,11 +100,22 @@
   },
   "caco3_hcl_005": {
     "reactants_key": "calcium carbonate|hydrochloric acid",
-    "reactants": ["calcium carbonate", "hydrochloric acid"],
-    "products": ["calcium chloride", "water", "carbon dioxide"],
+    "reactants": [
+      "calcium carbonate",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "calcium chloride",
+      "water",
+      "carbon dioxide"
+    ],
     "balanced_equation": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑",
     "type": "double_displacement",
-    "observations": ["vigorous effervescence", "solid slowly dissolves", "gas turns lime water milky"],
+    "observations": [
+      "vigorous effervescence",
+      "solid slowly dissolves",
+      "gas turns lime water milky"
+    ],
     "thermodynamics": "endothermic_to_mild_exothermic",
     "gas_produced": "carbon dioxide",
     "color_change": null,
@@ -76,11 +126,19 @@
   },
   "mg_o2_006": {
     "reactants_key": "magnesium|oxygen",
-    "reactants": ["magnesium", "oxygen"],
-    "products": ["magnesium oxide"],
+    "reactants": [
+      "magnesium",
+      "oxygen"
+    ],
+    "products": [
+      "magnesium oxide"
+    ],
     "balanced_equation": "2Mg + O₂ → 2MgO",
     "type": "combination_combustion",
-    "observations": ["dazzling white flame", "white powdery ash formed"],
+    "observations": [
+      "dazzling white flame",
+      "white powdery ash formed"
+    ],
     "thermodynamics": "highly_exothermic",
     "gas_produced": null,
     "color_change": "silvery_to_white_ash",
@@ -91,11 +149,20 @@
   },
   "h2_o2_007": {
     "reactants_key": "hydrogen|oxygen",
-    "reactants": ["hydrogen", "oxygen"],
-    "products": ["water"],
+    "reactants": [
+      "hydrogen",
+      "oxygen"
+    ],
+    "products": [
+      "water"
+    ],
     "balanced_equation": "2H₂ + O₂ → 2H₂O",
     "type": "combination",
-    "observations": ["pale blue flame", "pop sound on ignition", "water droplets form"],
+    "observations": [
+      "pale blue flame",
+      "pop sound on ignition",
+      "water droplets form"
+    ],
     "thermodynamics": "highly_exothermic",
     "gas_produced": null,
     "color_change": null,
@@ -106,11 +173,19 @@
   },
   "agno3_nacl_008": {
     "reactants_key": "silver nitrate|sodium chloride",
-    "reactants": ["silver nitrate", "sodium chloride"],
-    "products": ["silver chloride", "sodium nitrate"],
+    "reactants": [
+      "silver nitrate",
+      "sodium chloride"
+    ],
+    "products": [
+      "silver chloride",
+      "sodium nitrate"
+    ],
     "balanced_equation": "AgNO₃ + NaCl → AgCl↓ + NaNO₃",
     "type": "precipitation",
-    "observations": ["immediate white curdy precipitate"],
+    "observations": [
+      "immediate white curdy precipitate"
+    ],
     "thermodynamics": "neutral",
     "gas_produced": null,
     "color_change": "clear_to_white_suspension",
@@ -121,11 +196,19 @@
   },
   "pbno3_ki_009": {
     "reactants_key": "lead nitrate|potassium iodide",
-    "reactants": ["lead nitrate", "potassium iodide"],
-    "products": ["lead iodide", "potassium nitrate"],
+    "reactants": [
+      "lead nitrate",
+      "potassium iodide"
+    ],
+    "products": [
+      "lead iodide",
+      "potassium nitrate"
+    ],
     "balanced_equation": "Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃",
     "type": "precipitation",
-    "observations": ["bright yellow precipitate appears"],
+    "observations": [
+      "bright yellow precipitate appears"
+    ],
     "thermodynamics": "neutral",
     "gas_produced": null,
     "color_change": "colorless_to_yellow",
@@ -136,11 +219,20 @@
   },
   "cu_agno3_010": {
     "reactants_key": "copper|silver nitrate",
-    "reactants": ["copper", "silver nitrate"],
-    "products": ["copper nitrate", "silver"],
+    "reactants": [
+      "copper",
+      "silver nitrate"
+    ],
+    "products": [
+      "copper nitrate",
+      "silver"
+    ],
     "balanced_equation": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
     "type": "single_displacement",
-    "observations": ["solution turns blue", "silver crystals deposit on copper"],
+    "observations": [
+      "solution turns blue",
+      "silver crystals deposit on copper"
+    ],
     "thermodynamics": "mild_exothermic",
     "gas_produced": null,
     "color_change": "colorless_to_blue",
@@ -151,11 +243,19 @@
   },
   "bacl2_h2so4_011": {
     "reactants_key": "barium chloride|sulphuric acid",
-    "reactants": ["barium chloride", "sulphuric acid"],
-    "products": ["barium sulphate", "hydrochloric acid"],
+    "reactants": [
+      "barium chloride",
+      "sulphuric acid"
+    ],
+    "products": [
+      "barium sulphate",
+      "hydrochloric acid"
+    ],
     "balanced_equation": "BaCl₂ + H₂SO₄ → BaSO₄↓ + 2HCl",
     "type": "double_displacement",
-    "observations": ["dense white precipitate forms immediately"],
+    "observations": [
+      "dense white precipitate forms immediately"
+    ],
     "thermodynamics": "neutral",
     "gas_produced": null,
     "color_change": "clear_to_white_suspension",
@@ -166,11 +266,19 @@
   },
   "c_o2_012": {
     "reactants_key": "carbon|oxygen",
-    "reactants": ["carbon", "oxygen"],
-    "products": ["carbon dioxide"],
+    "reactants": [
+      "carbon",
+      "oxygen"
+    ],
+    "products": [
+      "carbon dioxide"
+    ],
     "balanced_equation": "C + O₂ → CO₂",
     "type": "combustion",
-    "observations": ["carbon glows red", "colorless gas released"],
+    "observations": [
+      "carbon glows red",
+      "colorless gas released"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": "carbon dioxide",
     "color_change": "black_to_ashy_surface",
@@ -181,11 +289,20 @@
   },
   "ch4_o2_013": {
     "reactants_key": "methane|oxygen",
-    "reactants": ["methane", "oxygen"],
-    "products": ["carbon dioxide", "water"],
+    "reactants": [
+      "methane",
+      "oxygen"
+    ],
+    "products": [
+      "carbon dioxide",
+      "water"
+    ],
     "balanced_equation": "CH₄ + 2O₂ → CO₂ + 2H₂O",
     "type": "combustion",
-    "observations": ["blue flame", "heat and light produced"],
+    "observations": [
+      "blue flame",
+      "heat and light produced"
+    ],
     "thermodynamics": "highly_exothermic",
     "gas_produced": "carbon dioxide",
     "color_change": null,
@@ -196,11 +313,18 @@
   },
   "litmus_acid_014": {
     "reactants_key": "acid solution|litmus",
-    "reactants": ["litmus", "acid solution"],
-    "products": ["red litmus state"],
+    "reactants": [
+      "litmus",
+      "acid solution"
+    ],
+    "products": [
+      "red litmus state"
+    ],
     "balanced_equation": "Blue litmus + acid → Red litmus",
     "type": "indicator_test",
-    "observations": ["blue litmus turns red"],
+    "observations": [
+      "blue litmus turns red"
+    ],
     "thermodynamics": "neutral",
     "gas_produced": null,
     "color_change": "blue_to_red",
@@ -211,11 +335,18 @@
   },
   "litmus_base_015": {
     "reactants_key": "base solution|litmus",
-    "reactants": ["litmus", "base solution"],
-    "products": ["blue litmus state"],
+    "reactants": [
+      "litmus",
+      "base solution"
+    ],
+    "products": [
+      "blue litmus state"
+    ],
     "balanced_equation": "Red litmus + base → Blue litmus",
     "type": "indicator_test",
-    "observations": ["red litmus turns blue"],
+    "observations": [
+      "red litmus turns blue"
+    ],
     "thermodynamics": "neutral",
     "gas_produced": null,
     "color_change": "red_to_blue",
@@ -226,11 +357,18 @@
   },
   "cu_heat_016": {
     "reactants_key": "copper|heat",
-    "reactants": ["copper", "heat"],
-    "products": ["copper(ii) oxide"],
+    "reactants": [
+      "copper",
+      "heat"
+    ],
+    "products": [
+      "copper(ii) oxide"
+    ],
     "balanced_equation": "2Cu + O₂ (heat) → 2CuO",
     "type": "decomposition",
-    "observations": ["reddish-brown copper turns black on heating"],
+    "observations": [
+      "reddish-brown copper turns black on heating"
+    ],
     "thermodynamics": "endothermic_input",
     "gas_produced": null,
     "color_change": "reddish_brown_to_black",
@@ -241,11 +379,22 @@
   },
   "feso4_heat_017": {
     "reactants_key": "ferrous sulphate|heat",
-    "reactants": ["ferrous sulphate", "heat"],
-    "products": ["ferric oxide", "sulphur dioxide", "sulphur trioxide"],
+    "reactants": [
+      "ferrous sulphate",
+      "heat"
+    ],
+    "products": [
+      "ferric oxide",
+      "sulphur dioxide",
+      "sulphur trioxide"
+    ],
     "balanced_equation": "2FeSO₄ (heat) → Fe₂O₃ + SO₂ + SO₃",
     "type": "decomposition",
-    "observations": ["green crystals first lose water", "residue turns brown", "pungent gases evolve"],
+    "observations": [
+      "green crystals first lose water",
+      "residue turns brown",
+      "pungent gases evolve"
+    ],
     "thermodynamics": "endothermic_input",
     "gas_produced": "sulphur dioxide_and_sulphur_trioxide",
     "color_change": "green_to_brown",
@@ -256,11 +405,20 @@
   },
   "cao_h2o_018": {
     "reactants_key": "calcium oxide|water",
-    "reactants": ["calcium oxide", "water"],
-    "products": ["calcium hydroxide"],
+    "reactants": [
+      "calcium oxide",
+      "water"
+    ],
+    "products": [
+      "calcium hydroxide"
+    ],
     "balanced_equation": "CaO + H₂O → Ca(OH)₂",
     "type": "combination",
-    "observations": ["hissing sound", "container becomes hot", "white slurry forms"],
+    "observations": [
+      "hissing sound",
+      "container becomes hot",
+      "white slurry forms"
+    ],
     "thermodynamics": "highly_exothermic",
     "gas_produced": null,
     "color_change": null,
@@ -271,11 +429,18 @@
   },
   "nh3_hcl_019": {
     "reactants_key": "ammonia|hydrochloric acid",
-    "reactants": ["ammonia", "hydrochloric acid"],
-    "products": ["ammonium chloride"],
+    "reactants": [
+      "ammonia",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "ammonium chloride"
+    ],
     "balanced_equation": "NH₃ + HCl → NH₄Cl",
     "type": "combination",
-    "observations": ["dense white fumes of ammonium chloride"],
+    "observations": [
+      "dense white fumes of ammonium chloride"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": null,
     "color_change": null,
@@ -286,11 +451,20 @@
   },
   "zn_cuso4_020": {
     "reactants_key": "copper sulphate|zinc",
-    "reactants": ["zinc", "copper sulphate"],
-    "products": ["zinc sulphate", "copper"],
+    "reactants": [
+      "zinc",
+      "copper sulphate"
+    ],
+    "products": [
+      "zinc sulphate",
+      "copper"
+    ],
     "balanced_equation": "Zn + CuSO₄ → ZnSO₄ + Cu",
     "type": "single_displacement",
-    "observations": ["blue solution fades", "reddish-brown copper deposits"],
+    "observations": [
+      "blue solution fades",
+      "reddish-brown copper deposits"
+    ],
     "thermodynamics": "mild_exothermic",
     "gas_produced": null,
     "color_change": "blue_to_colorless",
@@ -301,11 +475,20 @@
   },
   "fe_hcl_021": {
     "reactants_key": "hydrochloric acid|iron",
-    "reactants": ["iron", "hydrochloric acid"],
-    "products": ["ferrous chloride", "hydrogen gas"],
+    "reactants": [
+      "iron",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "ferrous chloride",
+      "hydrogen gas"
+    ],
     "balanced_equation": "Fe + 2HCl → FeCl₂ + H₂↑",
     "type": "single_displacement",
-    "observations": ["slow effervescence", "solution turns pale green"],
+    "observations": [
+      "slow effervescence",
+      "solution turns pale green"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": "hydrogen",
     "color_change": "colorless_to_pale_green",
@@ -316,11 +499,21 @@
   },
   "na2co3_hcl_022": {
     "reactants_key": "hydrochloric acid|sodium carbonate",
-    "reactants": ["sodium carbonate", "hydrochloric acid"],
-    "products": ["sodium chloride", "water", "carbon dioxide"],
+    "reactants": [
+      "sodium carbonate",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "sodium chloride",
+      "water",
+      "carbon dioxide"
+    ],
     "balanced_equation": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑",
     "type": "double_displacement",
-    "observations": ["brisk effervescence", "colorless gas evolved"],
+    "observations": [
+      "brisk effervescence",
+      "colorless gas evolved"
+    ],
     "thermodynamics": "mild_endothermic",
     "gas_produced": "carbon dioxide",
     "color_change": null,
@@ -331,11 +524,19 @@
   },
   "h2o2_decomp_023": {
     "reactants_key": "hydrogen peroxide",
-    "reactants": ["hydrogen peroxide"],
-    "products": ["water", "oxygen"],
+    "reactants": [
+      "hydrogen peroxide"
+    ],
+    "products": [
+      "water",
+      "oxygen"
+    ],
     "balanced_equation": "2H₂O₂ → 2H₂O + O₂↑",
     "type": "decomposition",
-    "observations": ["oxygen bubbles evolve", "reaction speeds up with catalyst"],
+    "observations": [
+      "oxygen bubbles evolve",
+      "reaction speeds up with catalyst"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": "oxygen",
     "color_change": null,
@@ -346,11 +547,20 @@
   },
   "al_naoh_024": {
     "reactants_key": "aluminium|sodium hydroxide",
-    "reactants": ["aluminium", "sodium hydroxide"],
-    "products": ["sodium aluminate", "hydrogen gas"],
+    "reactants": [
+      "aluminium",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "sodium aluminate",
+      "hydrogen gas"
+    ],
     "balanced_equation": "2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑",
     "type": "special",
-    "observations": ["aluminium dissolves in alkali", "bubbles of hydrogen form"],
+    "observations": [
+      "aluminium dissolves in alkali",
+      "bubbles of hydrogen form"
+    ],
     "thermodynamics": "exothermic",
     "gas_produced": "hydrogen",
     "color_change": null,
@@ -361,11 +571,20 @@
   },
   "universal_indicator_ph_025": {
     "reactants_key": "solution (various ph)|universal indicator",
-    "reactants": ["universal indicator", "solution (various pH)"],
-    "products": ["ph-dependent color"],
+    "reactants": [
+      "universal indicator",
+      "solution (various pH)"
+    ],
+    "products": [
+      "ph-dependent color"
+    ],
     "balanced_equation": "Universal indicator + solution → color based on pH",
     "type": "indicator_test",
-    "observations": ["acidic solutions turn red/orange", "neutral solution turns green", "basic solutions turn blue/purple"],
+    "observations": [
+      "acidic solutions turn red/orange",
+      "neutral solution turns green",
+      "basic solutions turn blue/purple"
+    ],
     "thermodynamics": "neutral",
     "gas_produced": null,
     "color_change": "multicolor_ph_scale",
@@ -373,5 +592,1004 @@
     "animation_type": "ph_color_spectrum",
     "difficulty_level": "class_11",
     "ncert_reference": "Class 11, Ionic Equilibrium and pH"
+  },
+  "phenolphthalein_hcl_026": {
+    "reactants_key": "hydrochloric acid|phenolphthalein",
+    "reactants": [
+      "phenolphthalein",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "colorless phenolphthalein solution"
+    ],
+    "balanced_equation": "Phenolphthalein (pink in base) + HCl → Colorless solution",
+    "type": "indicator_test",
+    "observations": [
+      "pink color disappears",
+      "solution becomes colorless"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "pink_to_colorless",
+    "precipitate": null,
+    "animation_type": "indicator_color_shift",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 7, Chapter 5: Acids, Bases and Salts"
+  },
+  "phenolphthalein_naoh_027": {
+    "reactants_key": "phenolphthalein|sodium hydroxide",
+    "reactants": [
+      "phenolphthalein",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "pink phenolphthalein solution"
+    ],
+    "balanced_equation": "Phenolphthalein + NaOH → Pink solution",
+    "type": "indicator_test",
+    "observations": [
+      "solution turns pink",
+      "color intensity increases with base"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "colorless_to_pink",
+    "precipitate": null,
+    "animation_type": "ph_color_spectrum",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 7, Chapter 5: Acids, Bases and Salts"
+  },
+  "methyl_orange_hcl_028": {
+    "reactants_key": "hydrochloric acid|methyl orange",
+    "reactants": [
+      "methyl orange",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "red methyl orange solution"
+    ],
+    "balanced_equation": "Methyl orange + HCl → Red solution",
+    "type": "indicator_test",
+    "observations": [
+      "orange solution turns red"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "orange_to_red",
+    "precipitate": null,
+    "animation_type": "indicator_color_shift",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 7, Chapter 5: Acids, Bases and Salts"
+  },
+  "methyl_orange_naoh_029": {
+    "reactants_key": "methyl orange|sodium hydroxide",
+    "reactants": [
+      "methyl orange",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "yellow methyl orange solution"
+    ],
+    "balanced_equation": "Methyl orange + NaOH → Yellow solution",
+    "type": "indicator_test",
+    "observations": [
+      "orange solution turns yellow"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "orange_to_yellow",
+    "precipitate": null,
+    "animation_type": "indicator_color_shift",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 7, Chapter 5: Acids, Bases and Salts"
+  },
+  "rusting_iron_030": {
+    "reactants_key": "iron|oxygen|water",
+    "reactants": [
+      "iron",
+      "oxygen",
+      "water"
+    ],
+    "products": [
+      "hydrated iron(iii) oxide (rust)"
+    ],
+    "balanced_equation": "4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O",
+    "type": "special",
+    "observations": [
+      "reddish-brown flaky layer forms",
+      "iron surface corrodes slowly"
+    ],
+    "thermodynamics": "slow_exothermic",
+    "gas_produced": null,
+    "color_change": "grey_to_reddish_brown",
+    "precipitate": "rust_layer",
+    "animation_type": "surface_blackening",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 7, Chapter 6: Physical and Chemical Changes"
+  },
+  "candle_combustion_031": {
+    "reactants_key": "candle wax|oxygen",
+    "reactants": [
+      "candle wax",
+      "oxygen"
+    ],
+    "products": [
+      "carbon dioxide",
+      "water"
+    ],
+    "balanced_equation": "Paraffin wax + O₂ → CO₂ + H₂O + heat + light",
+    "type": "combustion",
+    "observations": [
+      "steady yellow flame",
+      "water droplets may condense on cool surface"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "steady_flame",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 8, Chapter 6: Combustion and Flame"
+  },
+  "vinegar_baking_soda_032": {
+    "reactants_key": "acetic acid|sodium bicarbonate",
+    "reactants": [
+      "acetic acid",
+      "sodium bicarbonate"
+    ],
+    "products": [
+      "sodium acetate",
+      "water",
+      "carbon dioxide"
+    ],
+    "balanced_equation": "CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂↑",
+    "type": "double_displacement",
+    "observations": [
+      "brisk effervescence",
+      "mixture froths"
+    ],
+    "thermodynamics": "endothermic_to_mild_exothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "brisk_bubbles",
+    "difficulty_level": "class_7",
+    "ncert_reference": "Class 8, Chapter 5: Some Natural Phenomena (acid-base activity context)"
+  },
+  "mg_h2so4_033": {
+    "reactants_key": "magnesium|sulphuric acid",
+    "reactants": [
+      "magnesium",
+      "sulphuric acid"
+    ],
+    "products": [
+      "magnesium sulphate",
+      "hydrogen gas"
+    ],
+    "balanced_equation": "Mg + H₂SO₄ → MgSO₄ + H₂↑",
+    "type": "single_displacement",
+    "observations": [
+      "rapid bubbling",
+      "metal dissolves quickly"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": "hydrogen",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "vigorous_bubbles",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "al_hcl_034": {
+    "reactants_key": "aluminium|hydrochloric acid",
+    "reactants": [
+      "aluminium",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "aluminium chloride",
+      "hydrogen gas"
+    ],
+    "balanced_equation": "2Al + 6HCl → 2AlCl₃ + 3H₂↑",
+    "type": "single_displacement",
+    "observations": [
+      "slow initial reaction due to oxide layer",
+      "bubbles after scratching surface"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": "hydrogen",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "slow_bubbles",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "mg_cuso4_035": {
+    "reactants_key": "copper sulphate solution|magnesium",
+    "reactants": [
+      "magnesium",
+      "copper sulphate solution"
+    ],
+    "products": [
+      "magnesium sulphate",
+      "copper"
+    ],
+    "balanced_equation": "Mg + CuSO₄ → MgSO₄ + Cu",
+    "type": "single_displacement",
+    "observations": [
+      "blue solution decolorizes",
+      "brown copper deposit forms"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": "blue_to_colorless",
+    "precipitate": "copper_deposit",
+    "animation_type": "metal_deposition",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "al_cuso4_036": {
+    "reactants_key": "aluminium|copper sulphate solution",
+    "reactants": [
+      "aluminium",
+      "copper sulphate solution"
+    ],
+    "products": [
+      "aluminium sulphate",
+      "copper"
+    ],
+    "balanced_equation": "2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu",
+    "type": "single_displacement",
+    "observations": [
+      "blue solution fades",
+      "copper coats aluminium strip"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": "blue_to_colorless",
+    "precipitate": "copper_deposit",
+    "animation_type": "metal_deposition",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "zn_agno3_037": {
+    "reactants_key": "silver nitrate|zinc",
+    "reactants": [
+      "zinc",
+      "silver nitrate"
+    ],
+    "products": [
+      "zinc nitrate",
+      "silver"
+    ],
+    "balanced_equation": "Zn + 2AgNO₃ → Zn(NO₃)₂ + 2Ag",
+    "type": "single_displacement",
+    "observations": [
+      "silver crystals deposit",
+      "solution remains colorless"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": "silver_deposit",
+    "animation_type": "crystal_deposition",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "fe_agno3_038": {
+    "reactants_key": "iron|silver nitrate",
+    "reactants": [
+      "iron",
+      "silver nitrate"
+    ],
+    "products": [
+      "iron(ii) nitrate",
+      "silver"
+    ],
+    "balanced_equation": "Fe + 2AgNO₃ → Fe(NO₃)₂ + 2Ag",
+    "type": "single_displacement",
+    "observations": [
+      "silver deposition on iron",
+      "solution turns pale green"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": "colorless_to_pale_green",
+    "precipitate": "silver_deposit",
+    "animation_type": "metal_deposition",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "cu_agno3_039": {
+    "reactants_key": "copper|silver nitrate",
+    "reactants": [
+      "copper",
+      "silver nitrate"
+    ],
+    "products": [
+      "copper(ii) nitrate",
+      "silver"
+    ],
+    "balanced_equation": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
+    "type": "single_displacement",
+    "observations": [
+      "grey silver crystals form",
+      "solution turns blue"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": "colorless_to_blue",
+    "precipitate": "silver_deposit",
+    "animation_type": "crystal_deposition",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "mg_hcl_040": {
+    "reactants_key": "hydrochloric acid|magnesium",
+    "reactants": [
+      "magnesium",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "magnesium chloride",
+      "hydrogen gas"
+    ],
+    "balanced_equation": "Mg + 2HCl → MgCl₂ + H₂↑",
+    "type": "single_displacement",
+    "observations": [
+      "vigorous effervescence",
+      "reaction faster than zinc"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": "hydrogen",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "vigorous_bubbles",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "cu_hcl_041": {
+    "reactants_key": "copper|hydrochloric acid",
+    "reactants": [
+      "copper",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "no reaction"
+    ],
+    "balanced_equation": "Cu + HCl → No reaction",
+    "type": "special",
+    "observations": [
+      "no bubbles",
+      "copper remains unchanged"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "zn_pbno3_042": {
+    "reactants_key": "lead nitrate|zinc",
+    "reactants": [
+      "zinc",
+      "lead nitrate"
+    ],
+    "products": [
+      "zinc nitrate",
+      "lead"
+    ],
+    "balanced_equation": "Zn + Pb(NO₃)₂ → Zn(NO₃)₂ + Pb",
+    "type": "single_displacement",
+    "observations": [
+      "grey lead deposits on zinc strip"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": "lead_deposit",
+    "animation_type": "metal_deposition",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "zn_nacl_043": {
+    "reactants_key": "sodium chloride solution|zinc",
+    "reactants": [
+      "zinc",
+      "sodium chloride solution"
+    ],
+    "products": [
+      "no reaction"
+    ],
+    "balanced_equation": "Zn + NaCl → No reaction",
+    "type": "special",
+    "observations": [
+      "no visible change"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "bano3_na2so4_044": {
+    "reactants_key": "barium nitrate|sodium sulphate",
+    "reactants": [
+      "barium nitrate",
+      "sodium sulphate"
+    ],
+    "products": [
+      "barium sulphate",
+      "sodium nitrate"
+    ],
+    "balanced_equation": "Ba(NO₃)₂ + Na₂SO₄ → BaSO₄↓ + 2NaNO₃",
+    "type": "precipitation",
+    "observations": [
+      "dense white precipitate forms immediately"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "clear_to_white_suspension",
+    "precipitate": "barium_sulphate",
+    "animation_type": "dense_precipitate",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "cacl2_na2co3_045": {
+    "reactants_key": "calcium chloride|sodium carbonate",
+    "reactants": [
+      "calcium chloride",
+      "sodium carbonate"
+    ],
+    "products": [
+      "calcium carbonate",
+      "sodium chloride"
+    ],
+    "balanced_equation": "CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2NaCl",
+    "type": "precipitation",
+    "observations": [
+      "milky white precipitate appears"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "clear_to_milky_white",
+    "precipitate": "calcium_carbonate",
+    "animation_type": "precipitate_cloud",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "cuso4_naoh_046": {
+    "reactants_key": "copper sulphate solution|sodium hydroxide",
+    "reactants": [
+      "copper sulphate solution",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "copper(ii) hydroxide",
+      "sodium sulphate"
+    ],
+    "balanced_equation": "CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄",
+    "type": "precipitation",
+    "observations": [
+      "light blue gelatinous precipitate forms"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "blue_solution_to_blue_precipitate",
+    "precipitate": "copper_hydroxide",
+    "animation_type": "precipitate_cloud",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "fecl3_naoh_047": {
+    "reactants_key": "ferric chloride|sodium hydroxide",
+    "reactants": [
+      "ferric chloride",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "ferric hydroxide",
+      "sodium chloride"
+    ],
+    "balanced_equation": "FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl",
+    "type": "precipitation",
+    "observations": [
+      "reddish-brown precipitate forms"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "yellow_to_brown_suspension",
+    "precipitate": "ferric_hydroxide",
+    "animation_type": "dense_precipitate",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "znso4_naoh_048": {
+    "reactants_key": "sodium hydroxide|zinc sulphate",
+    "reactants": [
+      "sodium hydroxide",
+      "zinc sulphate"
+    ],
+    "products": [
+      "zinc hydroxide",
+      "sodium sulphate"
+    ],
+    "balanced_equation": "ZnSO₄ + 2NaOH → Zn(OH)₂↓ + Na₂SO₄",
+    "type": "precipitation",
+    "observations": [
+      "white precipitate appears"
+    ],
+    "thermodynamics": "neutral",
+    "gas_produced": null,
+    "color_change": "clear_to_white_suspension",
+    "precipitate": "zinc_hydroxide",
+    "animation_type": "precipitate_cloud",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "agcl_sunlight_049": {
+    "reactants_key": "silver chloride|sunlight",
+    "reactants": [
+      "silver chloride",
+      "sunlight"
+    ],
+    "products": [
+      "silver",
+      "chlorine gas"
+    ],
+    "balanced_equation": "2AgCl → 2Ag + Cl₂↑ (sunlight)",
+    "type": "decomposition",
+    "observations": [
+      "white AgCl turns grey",
+      "photosensitive decomposition"
+    ],
+    "thermodynamics": "photochemical",
+    "gas_produced": "chlorine",
+    "color_change": "white_to_grey",
+    "precipitate": null,
+    "animation_type": "surface_blackening",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "znco3_heat_050": {
+    "reactants_key": "zinc carbonate",
+    "reactants": [
+      "zinc carbonate"
+    ],
+    "products": [
+      "zinc oxide",
+      "carbon dioxide"
+    ],
+    "balanced_equation": "ZnCO₃ → ZnO + CO₂↑",
+    "type": "decomposition",
+    "observations": [
+      "solid residue remains",
+      "gas released on heating"
+    ],
+    "thermodynamics": "endothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heating_with_fumes",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "caco3_heat_051": {
+    "reactants_key": "calcium carbonate",
+    "reactants": [
+      "calcium carbonate"
+    ],
+    "products": [
+      "calcium oxide",
+      "carbon dioxide"
+    ],
+    "balanced_equation": "CaCO₃ → CaO + CO₂↑",
+    "type": "decomposition",
+    "observations": [
+      "limestone decomposes on strong heating"
+    ],
+    "thermodynamics": "endothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heating_with_fumes",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "h2o_electrolysis_052": {
+    "reactants_key": "water",
+    "reactants": [
+      "water"
+    ],
+    "products": [
+      "hydrogen",
+      "oxygen"
+    ],
+    "balanced_equation": "2H₂O → 2H₂ + O₂ (electricity)",
+    "type": "decomposition",
+    "observations": [
+      "bubbles at both electrodes",
+      "more gas at cathode"
+    ],
+    "thermodynamics": "endothermic",
+    "gas_produced": "hydrogen_and_oxygen",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "catalytic_bubbles",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "h2so4_koh_053": {
+    "reactants_key": "potassium hydroxide|sulphuric acid",
+    "reactants": [
+      "potassium hydroxide",
+      "sulphuric acid"
+    ],
+    "products": [
+      "potassium sulphate",
+      "water"
+    ],
+    "balanced_equation": "2KOH + H₂SO₄ → K₂SO₄ + 2H₂O",
+    "type": "neutralization",
+    "observations": [
+      "temperature rises",
+      "clear solution formed"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "hno3_naoh_054": {
+    "reactants_key": "nitric acid|sodium hydroxide",
+    "reactants": [
+      "nitric acid",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "sodium nitrate",
+      "water"
+    ],
+    "balanced_equation": "HNO₃ + NaOH → NaNO₃ + H₂O",
+    "type": "neutralization",
+    "observations": [
+      "solution warms slightly"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "ch3cooh_naoh_055": {
+    "reactants_key": "acetic acid|sodium hydroxide",
+    "reactants": [
+      "acetic acid",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "sodium acetate",
+      "water"
+    ],
+    "balanced_equation": "CH₃COOH + NaOH → CH₃COONa + H₂O",
+    "type": "neutralization",
+    "observations": [
+      "mild temperature rise",
+      "vinegar smell decreases"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "hcl_nh4oh_056": {
+    "reactants_key": "ammonium hydroxide|hydrochloric acid",
+    "reactants": [
+      "ammonium hydroxide",
+      "hydrochloric acid"
+    ],
+    "products": [
+      "ammonium chloride",
+      "water"
+    ],
+    "balanced_equation": "NH₄OH + HCl → NH₄Cl + H₂O",
+    "type": "neutralization",
+    "observations": [
+      "pungent smell of ammonia disappears"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 2: Acids, Bases and Salts"
+  },
+  "iron_corrosion_057": {
+    "reactants_key": "iron|moist air",
+    "reactants": [
+      "iron",
+      "moist air"
+    ],
+    "products": [
+      "rust"
+    ],
+    "balanced_equation": "4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O",
+    "type": "special",
+    "observations": [
+      "reddish-brown coating on iron"
+    ],
+    "thermodynamics": "slow_exothermic",
+    "gas_produced": null,
+    "color_change": "metallic_grey_to_rusty_brown",
+    "precipitate": "rust_layer",
+    "animation_type": "surface_blackening",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
+  },
+  "rancidity_oil_058": {
+    "reactants_key": "cooking oil|oxygen",
+    "reactants": [
+      "cooking oil",
+      "oxygen"
+    ],
+    "products": [
+      "oxidized rancid compounds"
+    ],
+    "balanced_equation": "Unsaturated fats + O₂ → Peroxides and aldehydes (rancid products)",
+    "type": "special",
+    "observations": [
+      "unpleasant smell develops",
+      "taste deteriorates"
+    ],
+    "thermodynamics": "slow_oxidation",
+    "gas_produced": null,
+    "color_change": "pale_to_yellowish",
+    "precipitate": null,
+    "animation_type": "surface_blackening",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 1: Chemical Reactions and Equations"
+  },
+  "haber_process_059": {
+    "reactants_key": "hydrogen|nitrogen",
+    "reactants": [
+      "hydrogen",
+      "nitrogen"
+    ],
+    "products": [
+      "ammonia"
+    ],
+    "balanced_equation": "N₂ + 3H₂ ⇌ 2NH₃",
+    "type": "combination",
+    "observations": [
+      "ammonia formed under high pressure and catalyst"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "catalytic_bubbles",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 11, Chapter 7: Equilibrium (industrial synthesis context)"
+  },
+  "contact_process_060": {
+    "reactants_key": "oxygen|sulphur dioxide",
+    "reactants": [
+      "oxygen",
+      "sulphur dioxide"
+    ],
+    "products": [
+      "sulphur trioxide"
+    ],
+    "balanced_equation": "2SO₂ + O₂ ⇌ 2SO₃",
+    "type": "combination",
+    "observations": [
+      "conversion increases with V₂O₅ catalyst"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "catalytic_bubbles",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 12, Chapter 7: The p-Block Elements"
+  },
+  "ostwald_no_061": {
+    "reactants_key": "nitric oxide|oxygen",
+    "reactants": [
+      "nitric oxide",
+      "oxygen"
+    ],
+    "products": [
+      "nitrogen dioxide"
+    ],
+    "balanced_equation": "2NO + O₂ → 2NO₂",
+    "type": "combination",
+    "observations": [
+      "colorless gas turns brown"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": "nitrogen dioxide",
+    "color_change": "colorless_to_brown",
+    "precipitate": null,
+    "animation_type": "heating_with_fumes",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 12, Chapter 7: The p-Block Elements"
+  },
+  "c2h6_combustion_062": {
+    "reactants_key": "ethane|oxygen",
+    "reactants": [
+      "ethane",
+      "oxygen"
+    ],
+    "products": [
+      "carbon dioxide",
+      "water"
+    ],
+    "balanced_equation": "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O",
+    "type": "combustion",
+    "observations": [
+      "clean blue flame",
+      "heat released"
+    ],
+    "thermodynamics": "highly_exothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "steady_flame",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 11, Chapter 13: Hydrocarbons"
+  },
+  "c2h4_combustion_063": {
+    "reactants_key": "ethene|oxygen",
+    "reactants": [
+      "ethene",
+      "oxygen"
+    ],
+    "products": [
+      "carbon dioxide",
+      "water"
+    ],
+    "balanced_equation": "C₂H₄ + 3O₂ → 2CO₂ + 2H₂O",
+    "type": "combustion",
+    "observations": [
+      "luminous flame in limited oxygen",
+      "water vapor produced"
+    ],
+    "thermodynamics": "highly_exothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "glow_combustion",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 11, Chapter 13: Hydrocarbons"
+  },
+  "ethene_hydrogenation_064": {
+    "reactants_key": "ethene|hydrogen",
+    "reactants": [
+      "ethene",
+      "hydrogen"
+    ],
+    "products": [
+      "ethane"
+    ],
+    "balanced_equation": "C₂H₄ + H₂ → C₂H₆ (Ni catalyst)",
+    "type": "combination",
+    "observations": [
+      "decolorized unsaturation test after reaction"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "catalytic_bubbles",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 11, Chapter 13: Hydrocarbons"
+  },
+  "ethene_bromination_065": {
+    "reactants_key": "bromine water|ethene",
+    "reactants": [
+      "bromine water",
+      "ethene"
+    ],
+    "products": [
+      "1,2-dibromoethane"
+    ],
+    "balanced_equation": "C₂H₄ + Br₂ → C₂H₄Br₂",
+    "type": "combination",
+    "observations": [
+      "bromine water decolorizes"
+    ],
+    "thermodynamics": "mild_exothermic",
+    "gas_produced": null,
+    "color_change": "reddish_brown_to_colorless",
+    "precipitate": null,
+    "animation_type": "indicator_color_shift",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 11, Chapter 13: Hydrocarbons"
+  },
+  "saponification_066": {
+    "reactants_key": "fat|sodium hydroxide",
+    "reactants": [
+      "fat",
+      "sodium hydroxide"
+    ],
+    "products": [
+      "glycerol",
+      "soap"
+    ],
+    "balanced_equation": "Fat/Oil + 3NaOH → Glycerol + 3Soap (sodium salts)",
+    "type": "special",
+    "observations": [
+      "thick soapy mixture forms",
+      "greasy feel decreases"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": "soap_mass",
+    "animation_type": "dense_precipitate",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 12, Chapter 16: Chemistry in Everyday Life"
+  },
+  "esterification_067": {
+    "reactants_key": "acetic acid|ethanol",
+    "reactants": [
+      "acetic acid",
+      "ethanol"
+    ],
+    "products": [
+      "ethyl acetate",
+      "water"
+    ],
+    "balanced_equation": "CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O",
+    "type": "special",
+    "observations": [
+      "pleasant fruity smell appears",
+      "requires acid catalyst and heating"
+    ],
+    "thermodynamics": "endothermic",
+    "gas_produced": null,
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "heat_only",
+    "difficulty_level": "class_10",
+    "ncert_reference": "Class 10, Chapter 4: Carbon and its Compounds"
+  },
+  "fermentation_glucose_068": {
+    "reactants_key": "glucose|yeast",
+    "reactants": [
+      "glucose",
+      "yeast"
+    ],
+    "products": [
+      "ethanol",
+      "carbon dioxide"
+    ],
+    "balanced_equation": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂↑",
+    "type": "decomposition",
+    "observations": [
+      "slow bubbling",
+      "alcoholic smell develops"
+    ],
+    "thermodynamics": "exothermic",
+    "gas_produced": "carbon dioxide",
+    "color_change": null,
+    "precipitate": null,
+    "animation_type": "slow_bubbles",
+    "difficulty_level": "class_11",
+    "ncert_reference": "Class 12, Chapter 13: Amines (fermentation industrial context)"
   }
 }
