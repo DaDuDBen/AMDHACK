@@ -8,6 +8,7 @@ from typing import Any
 
 import httpx
 from anthropic import AsyncAnthropic
+from groq import AsyncGroq
 
 EXPLANATION_SYSTEM_PROMPT = """You are Prayog, a friendly chemistry tutor for Indian school students (Class 8-12).
 You explain reactions clearly and simply, using examples from everyday Indian life where possible.
@@ -44,6 +45,21 @@ async def _generate_with_claude(prompt: str) -> dict[str, Any]:
     return json.loads(content.strip())
 
 
+
+async def _generate_with_groq(prompt: str) -> dict[str, Any]:
+    client = AsyncGroq(api_key=os.getenv("GROQ_API_KEY"))
+    model = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+    response = await client.chat.completions.create(
+        model=model,
+        temperature=0.2,
+        messages=[
+            {"role": "system", "content": EXPLANATION_SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+    )
+    content = response.choices[0].message.content or "{}"
+    return json.loads(content.strip())
+
 async def _generate_with_ollama(prompt: str) -> dict[str, Any]:
     base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     model = os.getenv("OLLAMA_MODEL", "phi3:mini")
@@ -75,7 +91,12 @@ async def generate_explanation(
         f"Simulation result: {json.dumps(simulation_result, ensure_ascii=False)}"
     )
 
-    generator = _generate_with_claude if llm_mode == "claude" else _generate_with_ollama
+    if llm_mode == "claude":
+        generator = _generate_with_claude
+    elif llm_mode == "groq":
+        generator = _generate_with_groq
+    else:
+        generator = _generate_with_ollama
     try:
         explanation = await generator(prompt)
         required_keys = {"what_happened", "socratic_question", "key_concept", "ncert_reference", "fun_fact"}
