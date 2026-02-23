@@ -1,6 +1,8 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict
 
 
 class ExperimentRequest(BaseModel):
-    user_input: str = Field(min_length=1)
+    user_input: str
     session_id: str | None = None
+
+    model_config = ConfigDict(extra="forbid")
