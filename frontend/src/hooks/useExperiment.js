@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   is_blocked: false,
   is_unknown: false,
   safety: null,
-  reaction: null,
+  simulation: null,
   visualization: null,
   explanation: null,
   parsed_input: null,
@@ -19,12 +19,12 @@ export function useExperiment() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const submitExperiment = useCallback(async (input) => {
+  const submitExperiment = useCallback(async (userInput, sessionId = null) => {
     setLoading(true);
     setError(null);
 
     try {
-      const result = await runExperiment(input);
+      const result = await runExperiment(userInput, sessionId);
       setResponse({ ...INITIAL_STATE, ...result });
       return result;
     } catch (err) {
@@ -35,10 +35,9 @@ export function useExperiment() {
     }
   }, []);
 
-  const resetExperiment = useCallback(() => {
+  const clearResult = useCallback(() => {
     setResponse(INITIAL_STATE);
     setError(null);
-    setLoading(false);
   }, []);
 
   return {
@@ -46,6 +45,6 @@ export function useExperiment() {
     error,
     response,
     submitExperiment,
-    resetExperiment
+    clearResult
   };
 }
