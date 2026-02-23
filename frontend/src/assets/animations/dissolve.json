@@ -5,9 +5,8 @@
   "op": 60,
   "w": 512,
   "h": 512,
-  "nm": "dissolve_placeholder",
+  "nm": "placeholder",
   "ddd": 0,
   "assets": [],
-  "layers": [],
-  "markers": []
+  "layers": []
 }

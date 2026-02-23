@@ -20,10 +20,13 @@ async function request(path, options = {}) {
   return payload;
 }
 
-export function runExperiment(input) {
+export function runExperiment(userInput, sessionId = null) {
   return request('/api/experiment', {
     method: 'POST',
-    body: JSON.stringify({ input })
+    body: JSON.stringify({
+      user_input: userInput,
+      ...(sessionId ? { session_id: sessionId } : {})
+    })
   });
 }
 
