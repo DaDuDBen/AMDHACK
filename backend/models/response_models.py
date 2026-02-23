@@ -1,9 +1,8 @@
-from pydantic import BaseModel, ConfigDict
 from __future__ import annotations
 
 from typing import Any
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class SafetyPayload(BaseModel):
@@ -51,7 +50,7 @@ class SuccessResponse(BaseModel):
     simulation: SimulationPayload
     visualization: VisualizationPayload
     explanation: ExplanationPayload
-    parsed_input: dict
+    parsed_input: dict[str, Any]
 
     model_config = ConfigDict(extra="forbid")
 
@@ -68,7 +67,7 @@ class UnknownResponse(BaseModel):
     status: str = "unknown"
     is_unknown: bool = True
     message: str
-    partial_info: dict
+    partial_info: dict[str, Any]
 
     model_config = ConfigDict(extra="forbid")
 
@@ -95,15 +94,3 @@ class ReactionsResponse(BaseModel):
     reactions: list[ReactionSummary]
 
     model_config = ConfigDict(extra="forbid")
-
-class ExperimentResponse(BaseModel):
-    status: str
-    is_blocked: bool | None = None
-    is_unknown: bool | None = None
-    simulation: dict[str, Any] | None = None
-    visualization: dict[str, Any] | None = None
-    explanation: dict[str, Any] | None = None
-    parsed_input: dict[str, Any] | None = None
-    safety: SafetyPayload | None = None
-    message: str | None = None
-    partial_info: dict[str, Any] | None = None
