@@ -33,3 +33,26 @@ explanation_engine.py → models → routes → main.py → frontend
 - All env config via backend/.env (copy from .env.example)
 - All chemistry data in backend/data/ as JSON — never hardcoded in Python
 - All animation assets in frontend/src/assets/animations/ as .json files
+
+## Verification Method
+The Codex sandbox has no outbound network access. Do NOT attempt pip install 
+or uvicorn server start to verify work. Instead verify by:
+- Static import check: `python3 -c "import ast; ast.parse(open('main.py').read())"` 
+  for each .py file
+- Schema check: `python3 -c "import json; json.load(open('data/reactions.json'))"` 
+  for data files
+- Confirm all imports in a file resolve to files that exist in the repo
+```
+
+---
+
+## What You Should Do Right Now
+
+**Don't re-run the verification in Codex.** Instead, pull the repo to your local machine and run the smoke test there yourself. That's the right place to do it — Codex writes the code, you run it locally.
+
+Once it passes locally, give Codex the green light for Plan B with this prompt:
+```
+Backend has been verified locally — server starts and all 3 smoke test 
+curl commands pass. Proceed with Plan B frontend implementation. 
+Do not attempt pip install or server startup to verify — use static 
+analysis only (ast.parse for Python, json.load for data files).
