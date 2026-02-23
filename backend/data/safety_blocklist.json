@@ -1,0 +1,92 @@
+[
+  {
+    "keywords": ["potassium", "water"],
+    "reason": "Potassium reacts violently with water, producing heat and hydrogen gas that can ignite.",
+    "educational_note": "Alkali metals become more reactive down the group; potassium is often stored under oil to prevent contact with moisture.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["sodium", "water"],
+    "reason": "Sodium reacts vigorously with water and can cause splashing of hot corrosive solution.",
+    "educational_note": "The sodium-water reaction forms sodium hydroxide and hydrogen gas, both of which create significant classroom risk.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["thermite", "aluminum powder", "iron oxide"],
+    "reason": "Thermite reactions generate extremely high temperatures and molten metal.",
+    "educational_note": "This redox reaction is used in industrial welding, not standard school labs, because it is difficult to control once started.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["chlorine", "ammonia"],
+    "reason": "Mixing chlorine with ammonia can produce toxic chloramine gases.",
+    "educational_note": "Never mix cleaning chemicals; chloramine inhalation can severely irritate lungs and eyes.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["concentrated nitric acid", "glycerol"],
+    "reason": "Concentrated nitric acid with glycerol can form highly unstable nitrated compounds.",
+    "educational_note": "Strong nitrating mixtures are advanced hazardous chemistry and are prohibited in school settings.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["hydrogen peroxide", "manganese dioxide", "sealed container"],
+    "reason": "Rapid oxygen generation in a sealed container can cause pressure buildup and bursting.",
+    "educational_note": "Gas-evolving reactions must be done with proper venting to avoid dangerous pressure accidents.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["bleach", "acid"],
+    "reason": "Bleach mixed with acids releases chlorine gas.",
+    "educational_note": "Even common household chemicals can produce toxic gases when combined incorrectly.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["bleach", "alcohol"],
+    "reason": "Bleach with alcohol can form toxic byproducts including chloroform-like compounds.",
+    "educational_note": "Disinfectants should not be mixed; follow single-product usage instructions.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["concentrated sulfuric acid", "water", "pour water into acid"],
+    "reason": "Adding water directly into concentrated sulfuric acid can cause violent boiling and splattering.",
+    "educational_note": "Always add acid to water slowly, never the reverse, because dissolution is highly exothermic.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["ammonium dichromate", "ignite"],
+    "reason": "Igniting ammonium dichromate produces toxic chromium(VI)-containing residues and hazardous fumes.",
+    "educational_note": "Classic 'volcano' demos using dichromates are avoided due to carcinogenic heavy-metal exposure.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["methanol", "open flame"],
+    "reason": "Methanol is highly flammable and burns with a nearly invisible flame.",
+    "educational_note": "Invisible flames increase burn risk because students may not notice active combustion.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["ethanol", "open flame", "large quantity"],
+    "reason": "Large amounts of ethanol near open flame can flash and spread fire rapidly.",
+    "educational_note": "Use minimal quantities of flammable solvents and keep ignition sources away.",
+    "severity": "warning"
+  },
+  {
+    "keywords": ["silver nitrate", "skin"],
+    "reason": "Silver nitrate is corrosive and can damage skin and eyes.",
+    "educational_note": "Wear gloves and eye protection; chemical stains indicate contact that should be washed immediately.",
+    "severity": "warning"
+  },
+  {
+    "keywords": ["concentrated hydrochloric acid", "ammonia solution"],
+    "reason": "Mixing concentrated HCl with ammonia releases dense irritant fumes.",
+    "educational_note": "Acid-base vapors can irritate the respiratory tract even without open flames.",
+    "severity": "warning"
+  },
+  {
+    "keywords": ["copper sulfate", "ingest"],
+    "reason": "Copper sulfate is harmful if swallowed.",
+    "educational_note": "Laboratory chemicals must never be tasted; wash hands after handling salts and solutions.",
+    "severity": "warning"
+  }
+]
