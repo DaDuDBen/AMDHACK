@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import os
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,9 @@ from api.routes import router
 from core.safety_filter import configure_safety_rules
 from core.simulation_engine import configure_reactions_db
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(levelname)s: %(message)s")
+logger = logging.getLogger(__name__)
+
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 REACTIONS_FILE = DATA_DIR / "reactions.json"
@@ -26,7 +30,7 @@ load_dotenv(BASE_DIR / ".env")
 
 
 def _parse_cors_origins() -> list[str]:
-    env_value = os.getenv("CORS_ORIGINS", "http://localhost:3000")
+    env_value = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173")
     origins = [origin.strip() for origin in env_value.split(",") if origin.strip()]
     return origins or ["http://localhost:3000"]
 
@@ -58,18 +62,8 @@ def _startup_load_data() -> None:
     configure_reactions_db(reactions_data)
     configure_safety_rules(safety_rules)
 
-
-@app.get("/api/status")
-def get_status() -> dict[str, Any]:
-    reactions_data = getattr(app.state, "reactions_data", {})
-    reactions_loaded = len(reactions_data) if isinstance(reactions_data, (dict, list)) else 0
-
-    return {
-        "status": "ok",
-        "llm_mode": os.getenv("LLM_MODE", "offline"),
-        "reactions_loaded": reactions_loaded,
-        "version": "1.0.0",
-    }
+    llm_mode = os.getenv("LLM_MODE", "offline")
+    logger.info("Prayog-Shala backend started | LLM_MODE=%s | Reactions loaded: %d", llm_mode, len(reactions_data))
 
 
 app.include_router(router)

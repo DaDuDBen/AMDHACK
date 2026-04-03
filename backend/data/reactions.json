@@ -900,54 +900,7 @@
     "difficulty_level": "class_10",
     "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
   },
-  "cu_agno3_039": {
-    "reactants_key": "copper|silver nitrate",
-    "reactants": [
-      "copper",
-      "silver nitrate"
-    ],
-    "products": [
-      "copper(ii) nitrate",
-      "silver"
-    ],
-    "balanced_equation": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
-    "type": "single_displacement",
-    "observations": [
-      "grey silver crystals form",
-      "solution turns blue"
-    ],
-    "thermodynamics": "mild_exothermic",
-    "gas_produced": null,
-    "color_change": "colorless_to_blue",
-    "precipitate": "silver_deposit",
-    "animation_type": "crystal_deposition",
-    "difficulty_level": "class_10",
-    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
-  },
-  "mg_hcl_040": {
-    "reactants_key": "hydrochloric acid|magnesium",
-    "reactants": [
-      "magnesium",
-      "hydrochloric acid"
-    ],
-    "products": [
-      "magnesium chloride",
-      "hydrogen gas"
-    ],
-    "balanced_equation": "Mg + 2HCl → MgCl₂ + H₂↑",
-    "type": "single_displacement",
-    "observations": [
-      "vigorous effervescence",
-      "reaction faster than zinc"
-    ],
-    "thermodynamics": "exothermic",
-    "gas_produced": "hydrogen",
-    "color_change": null,
-    "precipitate": null,
-    "animation_type": "vigorous_bubbles",
-    "difficulty_level": "class_10",
-    "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
-  },
+
   "cu_hcl_041": {
     "reactants_key": "copper|hydrochloric acid",
     "reactants": [

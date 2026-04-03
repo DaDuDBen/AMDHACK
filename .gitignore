@@ -1,0 +1,18 @@
+# Model files (large binaries)
+models/*.gguf
+
+# Environment
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db

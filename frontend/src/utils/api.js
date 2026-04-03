@@ -20,12 +20,13 @@ async function request(path, options = {}) {
   return payload;
 }
 
-export function runExperiment(userInput, sessionId = null) {
+export function runExperiment(userInput, sessionId = null, context = null) {
   return request('/api/experiment', {
     method: 'POST',
     body: JSON.stringify({
       user_input: userInput,
-      ...(sessionId ? { session_id: sessionId } : {})
+      ...(sessionId ? { session_id: sessionId } : {}),
+      ...(context ? { context } : {})
     })
   });
 }
@@ -36,4 +37,11 @@ export function getStatus() {
 
 export function getReactions() {
   return request('/api/reactions');
+}
+
+export function switchMode(mode) {
+  return request('/api/mode', {
+    method: 'POST',
+    body: JSON.stringify({ mode })
+  });
 }

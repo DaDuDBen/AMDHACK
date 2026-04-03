@@ -1,4 +1,10 @@
+"""API route definitions for Prayog-Shala backend."""
+
+from __future__ import annotations
+
+import logging
 import os
+
 import httpx
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
@@ -22,7 +28,9 @@ from models.response_models import (
     VisualizationPayload,
 )
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
+
 OLLAMA_TIMEOUT_SECONDS = 10.0
 
 
@@ -45,7 +53,7 @@ async def _ensure_ollama_available() -> bool:
 
 @router.post("/api/experiment", response_model=SuccessResponse | BlockedResponse | UnknownResponse)
 async def run_experiment(payload: ExperimentRequest):
-    # 1) Safety check must happen first
+    # 1) Safety check must happen first — deterministic, no LLM
     safety_result = check_safety(payload.user_input)
     if not safety_result.get("is_safe", True):
         return BlockedResponse(
@@ -56,18 +64,62 @@ async def run_experiment(payload: ExperimentRequest):
             )
         )
 
-    # 2) Parser second
+    # 2) Check Ollama availability if in ollama mode
     if _llm_mode() == "ollama" and not await _ensure_ollama_available():
         return JSONResponse(status_code=503, content={"error": "Offline LLM unavailable, set LLM_MODE=offline"})
 
+    # 3) Parse the student input via LLM or regex fallback
     parsed = await parse_experiment(payload.user_input)
 
     reactants = parsed.get("reactants") or []
     action = parsed.get("action")
+
+    # 4) Follow-up question detection:
+    #    If no reactants found BUT context from a previous experiment exists,
+    #    route to explanation engine as a follow-up question.
+    if not reactants and payload.context:
+        logger.info("Detected follow-up question with context")
+        explanation = await generate_explanation(
+            simulation_result=payload.context,
+            student_input=payload.user_input,
+            difficulty_level=payload.context.get("difficulty_level", "class_10"),
+            is_followup=True,
+        )
+
+        # Reconstruct payloads from context
+        simulation_payload = SimulationPayload(
+            reaction_id=payload.context.get("reaction_id", "followup"),
+            balanced_equation=payload.context.get("balanced_equation", ""),
+            reactants=payload.context.get("reactants", []),
+            products=payload.context.get("products", []),
+            observations=payload.context.get("observations", []),
+            thermodynamics=payload.context.get("thermodynamics", ""),
+        )
+
+        viz_data = get_visualization(payload.context)
+        visualization_payload = VisualizationPayload(
+            animation_asset=viz_data["animation_asset"],
+            show_thermometer=viz_data["show_thermometer"],
+            thermometer_direction=viz_data.get("thermometer_direction") or "steady",
+            intensity=viz_data["intensity"],
+        )
+
+        return SuccessResponse(
+            simulation=simulation_payload,
+            visualization=visualization_payload,
+            explanation=ExplanationPayload(**explanation),
+            parsed_input={
+                "reactants": [],
+                "action": "followup",
+                "conditions": {},
+            },
+        )
+
+    # 5) No reactants, no context → can't understand
     if not reactants and not action and not parsed.get("conditions"):
         return JSONResponse(status_code=400, content={"error": "Could not understand input"})
 
-    # 3) Simulation third
+    # 6) Simulation — 100% local, uses reactions.json only
     simulation = simulate(parsed)
     if not simulation.get("found"):
         partial_info = simulation.get("partial_info") or {"reactant_notes": {}}
@@ -85,7 +137,7 @@ async def run_experiment(payload: ExperimentRequest):
         thermodynamics=simulation["thermodynamics"],
     )
 
-    # 4) Visualization + explanation last
+    # 7) Visualization + explanation
     visualization = get_visualization(simulation)
     explanation = await generate_explanation(
         simulation_result=simulation,
@@ -133,3 +185,24 @@ async def list_reactions():
         for reaction_id, reaction in REACTIONS_DB.items()
     ]
     return ReactionsResponse(reactions=summaries)
+
+
+@router.post("/api/mode")
+async def switch_mode(body: dict):
+    """Switch LLM mode at runtime (for demo purposes)."""
+    new_mode = body.get("mode", "").strip().lower()
+    valid_modes = {"claude", "ollama", "groq", "offline"}
+    if new_mode not in valid_modes:
+        return JSONResponse(
+            status_code=400,
+            content={"error": f"Invalid mode. Valid modes: {', '.join(sorted(valid_modes))}"},
+        )
+
+    os.environ["LLM_MODE"] = new_mode
+    logger.info("LLM mode switched to: %s", new_mode)
+
+    return {
+        "status": "ok",
+        "llm_mode": new_mode,
+        "message": f"LLM mode switched to {new_mode}",
+    }
