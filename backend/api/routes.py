@@ -86,27 +86,8 @@ async def run_experiment(payload: ExperimentRequest):
             is_followup=True,
         )
 
-        # Reconstruct payloads from context
-        simulation_payload = SimulationPayload(
-            reaction_id=payload.context.get("reaction_id", "followup"),
-            balanced_equation=payload.context.get("balanced_equation", ""),
-            reactants=payload.context.get("reactants", []),
-            products=payload.context.get("products", []),
-            observations=payload.context.get("observations", []),
-            thermodynamics=payload.context.get("thermodynamics", ""),
-        )
-
-        viz_data = get_visualization(payload.context)
-        visualization_payload = VisualizationPayload(
-            animation_asset=viz_data["animation_asset"],
-            show_thermometer=viz_data["show_thermometer"],
-            thermometer_direction=viz_data.get("thermometer_direction") or "steady",
-            intensity=viz_data["intensity"],
-        )
-
         return SuccessResponse(
-            simulation=simulation_payload,
-            visualization=visualization_payload,
+            is_followup=True,
             explanation=ExplanationPayload(**explanation),
             parsed_input={
                 "reactants": [],

@@ -45,7 +45,7 @@ CATEGORY_FALLBACKS: dict[tuple[str, ...], dict[str, Any]] = {
     tuple(sorted(("acid", "base"))): {
         "reaction_id": "template_neutralization",
         "products": ["salt", "water"],
-        "balanced_equation": "Acid + Base → Salt + Water",
+        "balanced_equation": "\\text{Acid} + \\text{Base} \\rightarrow \\text{Salt} + \\text{Water}",
         "type": "neutralization",
         "observations": ["temperature may rise", "pH moves toward neutral"],
         "thermodynamics": "exothermic",
@@ -59,7 +59,7 @@ CATEGORY_FALLBACKS: dict[tuple[str, ...], dict[str, Any]] = {
     tuple(sorted(("acid", "metal"))): {
         "reaction_id": "template_metal_acid",
         "products": ["salt", "hydrogen gas"],
-        "balanced_equation": "Metal + Acid → Salt + H₂↑",
+        "balanced_equation": "\\text{Metal} + \\text{Acid} \\rightarrow \\text{Salt} + \\mathrm{H}_2\\uparrow",
         "type": "single_displacement",
         "observations": ["effervescence", "metal surface gradually dissolves"],
         "thermodynamics": "exothermic",
@@ -73,7 +73,7 @@ CATEGORY_FALLBACKS: dict[tuple[str, ...], dict[str, Any]] = {
     tuple(sorted(("alkali_metal", "water"))): {
         "reaction_id": "template_alkali_water",
         "products": ["metal hydroxide", "hydrogen gas"],
-        "balanced_equation": "2M + 2H₂O → 2MOH + H₂↑",
+        "balanced_equation": "2\\mathrm{M} + 2\\mathrm{H}_2\\mathrm{O} \\rightarrow 2\\mathrm{MOH} + \\mathrm{H}_2\\uparrow",
         "type": "single_displacement",
         "observations": ["vigorous bubbling", "heat and possible ignition"],
         "thermodynamics": "strongly_exothermic",

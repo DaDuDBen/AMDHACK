@@ -9,6 +9,9 @@ import { useExperiment } from './hooks/useExperiment.js';
 import { getStatus } from './utils/api.js';
 
 function summarizeResponse(result) {
+  if (result?.is_followup) {
+    return 'Follow-up question answered';
+  }
   if (result?.is_blocked) {
     return 'Blocked by safety filter';
   }
@@ -105,12 +108,14 @@ export default function App() {
             loading={loading}
             simulation={response.simulation}
             visualization={response.visualization}
+            isFollowup={response.is_followup}
           />
 
           <ExplanationCard
             explanation={response.explanation}
             unknownMessage={unknownContent.message}
             partialInfo={unknownContent.partialInfo}
+            isFollowup={response.is_followup}
           />
         </section>
       </section>

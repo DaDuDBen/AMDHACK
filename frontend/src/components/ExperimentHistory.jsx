@@ -1,3 +1,5 @@
+import { InlineMath } from 'react-katex';
+
 export default function ExperimentHistory({ items }) {
   return (
     <div className="flex-1 overflow-y-auto rounded-lg border border-slate-200 bg-slate-50 p-3">
@@ -9,7 +11,13 @@ export default function ExperimentHistory({ items }) {
           {items.map((item) => (
             <li key={item.id} className="rounded-md border border-slate-200 bg-white p-2">
               <p className="text-sm font-medium text-slate-800">{item.input}</p>
-              <p className="text-xs text-slate-600">{item.summary}</p>
+              <div className="text-xs text-slate-600">
+                {item.summary && typeof item.summary === 'string' && item.summary.includes('\\') ? (
+                  <InlineMath math={item.summary} />
+                ) : (
+                  item.summary
+                )}
+              </div>
             </li>
           ))}
         </ul>

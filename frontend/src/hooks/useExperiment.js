@@ -5,6 +5,7 @@ const INITIAL_STATE = {
   status: null,
   is_blocked: false,
   is_unknown: false,
+  is_followup: false,
   safety: null,
   simulation: null,
   visualization: null,

@@ -47,8 +47,9 @@ class SuccessResponse(BaseModel):
     status: str = "success"
     is_blocked: bool = False
     is_unknown: bool = False
-    simulation: SimulationPayload
-    visualization: VisualizationPayload
+    is_followup: bool = False
+    simulation: SimulationPayload | None = None
+    visualization: VisualizationPayload | None = None
     explanation: ExplanationPayload
     parsed_input: dict[str, Any]
 

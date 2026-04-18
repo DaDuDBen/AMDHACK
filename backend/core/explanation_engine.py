@@ -16,6 +16,7 @@ You explain reactions clearly and simply, using examples from everyday Indian li
 You follow the Socratic method — after explaining what happened, always ask one guiding question
 that makes the student think deeper about WHY it happened.
 Keep explanations under 100 words. Use simple English.
+Use LaTeX wrapped in $ signs for all chemical formulas (e.g. $\\mathrm{H_2O}$, $\\mathrm{CO_2}$).
 Reference NCERT chapters when relevant.
 Always return ONLY valid JSON with keys: what_happened, socratic_question, key_concept, ncert_reference, fun_fact."""
 
@@ -128,7 +129,7 @@ def _followup_template(simulation_result: dict[str, Any], question: str) -> dict
     reaction_type = simulation_result.get("type", "chemical reaction").replace("_", " ")
 
     # Common follow-up patterns
-    if "warm" in lowered or "hot" in lowered or "heat" in lowered:
+    if "warm" in lowered or "hot" in lowered or "heat" in lowered or "exothermic" in lowered or "endothermic" in lowered:
         return {
             "what_happened": (
                 f"The reaction is {thermo.replace('_', ' ')}. When bonds form in the products, "
@@ -249,7 +250,10 @@ async def generate_explanation(
             f"Student follow-up question: {student_input}\n"
             f"Previous reaction context: {json.dumps(simulation_result, ensure_ascii=False)}\n"
             f"Difficulty level: {difficulty_level}\n"
-            f"Answer the student's follow-up about the previous reaction."
+            f"Answer the student's follow-up about the previous reaction. "
+            f"Provide a comprehensive, detailed explanation (up to 200-300 words). "
+            f"Explicitly ignore the 100-word limit from the system prompt for this follow-up, "
+            f"as the student needs a thorough understanding."
         )
     else:
         prompt = (

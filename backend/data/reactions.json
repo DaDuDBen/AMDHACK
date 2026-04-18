@@ -9,7 +9,7 @@
       "magnesium chloride",
       "hydrogen gas"
     ],
-    "balanced_equation": "Mg + 2HCl → MgCl₂ + H₂↑",
+    "balanced_equation": "\\mathrm{Mg} + 2\\mathrm{HCl} \\rightarrow \\mathrm{MgCl}_2 + \\mathrm{H}_2\\uparrow",
     "type": "single_displacement",
     "observations": [
       "effervescence",
@@ -34,7 +34,7 @@
       "zinc sulphate",
       "hydrogen gas"
     ],
-    "balanced_equation": "Zn + H₂SO₄ → ZnSO₄ + H₂↑",
+    "balanced_equation": "\\mathrm{Zn} + \\mathrm{H}_2\\mathrm{SO}_4 \\rightarrow \\mathrm{ZnSO}_4 + \\mathrm{H}_2\\uparrow",
     "type": "single_displacement",
     "observations": [
       "effervescence",
@@ -59,7 +59,7 @@
       "ferrous sulphate",
       "copper"
     ],
-    "balanced_equation": "Fe + CuSO₄ → FeSO₄ + Cu",
+    "balanced_equation": "\\mathrm{Fe} + \\mathrm{CuSO}_4 \\rightarrow \\mathrm{FeSO}_4 + \\mathrm{Cu}",
     "type": "single_displacement",
     "observations": [
       "blue solution turns green",
@@ -83,7 +83,7 @@
       "sodium chloride",
       "water"
     ],
-    "balanced_equation": "NaOH + HCl → NaCl + H₂O",
+    "balanced_equation": "\\mathrm{NaOH} + \\mathrm{HCl} \\rightarrow \\mathrm{NaCl} + \\mathrm{H}_2\\mathrm{O}",
     "type": "neutralization",
     "observations": [
       "no visible gas",
@@ -109,7 +109,7 @@
       "water",
       "carbon dioxide"
     ],
-    "balanced_equation": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑",
+    "balanced_equation": "\\mathrm{CaCO}_3 + 2\\mathrm{HCl} \\rightarrow \\mathrm{CaCl}_2 + \\mathrm{H}_2\\mathrm{O} + \\mathrm{CO}_2\\uparrow",
     "type": "double_displacement",
     "observations": [
       "vigorous effervescence",
@@ -133,7 +133,7 @@
     "products": [
       "magnesium oxide"
     ],
-    "balanced_equation": "2Mg + O₂ → 2MgO",
+    "balanced_equation": "2\\mathrm{Mg} + \\mathrm{O}_2 \\rightarrow 2\\mathrm{MgO}",
     "type": "combination_combustion",
     "observations": [
       "dazzling white flame",
@@ -156,7 +156,7 @@
     "products": [
       "water"
     ],
-    "balanced_equation": "2H₂ + O₂ → 2H₂O",
+    "balanced_equation": "2\\mathrm{H}_2 + \\mathrm{O}_2 \\rightarrow 2\\mathrm{H}_2\\mathrm{O}",
     "type": "combination",
     "observations": [
       "pale blue flame",
@@ -181,7 +181,7 @@
       "silver chloride",
       "sodium nitrate"
     ],
-    "balanced_equation": "AgNO₃ + NaCl → AgCl↓ + NaNO₃",
+    "balanced_equation": "\\mathrm{AgNO}_3 + \\mathrm{NaCl} \\rightarrow \\mathrm{AgCl}\\downarrow + \\mathrm{NaNO}_3",
     "type": "precipitation",
     "observations": [
       "immediate white curdy precipitate"
@@ -204,7 +204,7 @@
       "lead iodide",
       "potassium nitrate"
     ],
-    "balanced_equation": "Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃",
+    "balanced_equation": "\\mathrm{Pb}(\\mathrm{NO}_3)_2 + 2\\mathrm{KI} \\rightarrow \\mathrm{PbI}_2\\downarrow + 2\\mathrm{KNO}_3",
     "type": "precipitation",
     "observations": [
       "bright yellow precipitate appears"
@@ -227,7 +227,7 @@
       "copper nitrate",
       "silver"
     ],
-    "balanced_equation": "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag",
+    "balanced_equation": "\\mathrm{Cu} + 2\\mathrm{AgNO}_3 \\rightarrow \\mathrm{Cu}(\\mathrm{NO}_3)_2 + 2\\mathrm{Ag}",
     "type": "single_displacement",
     "observations": [
       "solution turns blue",
@@ -251,7 +251,7 @@
       "barium sulphate",
       "hydrochloric acid"
     ],
-    "balanced_equation": "BaCl₂ + H₂SO₄ → BaSO₄↓ + 2HCl",
+    "balanced_equation": "\\mathrm{BaCl}_2 + \\mathrm{H}_2\\mathrm{SO}_4 \\rightarrow \\mathrm{BaSO}_4\\downarrow + 2\\mathrm{HCl}",
     "type": "double_displacement",
     "observations": [
       "dense white precipitate forms immediately"
@@ -273,7 +273,7 @@
     "products": [
       "carbon dioxide"
     ],
-    "balanced_equation": "C + O₂ → CO₂",
+    "balanced_equation": "\\mathrm{C} + \\mathrm{O}_2 \\rightarrow \\mathrm{CO}_2",
     "type": "combustion",
     "observations": [
       "carbon glows red",
@@ -297,7 +297,7 @@
       "carbon dioxide",
       "water"
     ],
-    "balanced_equation": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+    "balanced_equation": "\\mathrm{CH}_4 + 2\\mathrm{O}_2 \\rightarrow \\mathrm{CO}_2 + 2\\mathrm{H}_2\\mathrm{O}",
     "type": "combustion",
     "observations": [
       "blue flame",
@@ -320,7 +320,7 @@
     "products": [
       "red litmus state"
     ],
-    "balanced_equation": "Blue litmus + acid → Red litmus",
+    "balanced_equation": "\\text{Blue litmus + acid} \\rightarrow \\text{Red litmus}",
     "type": "indicator_test",
     "observations": [
       "blue litmus turns red"
@@ -342,7 +342,7 @@
     "products": [
       "blue litmus state"
     ],
-    "balanced_equation": "Red litmus + base → Blue litmus",
+    "balanced_equation": "\\text{Red litmus + base} \\rightarrow \\text{Blue litmus}",
     "type": "indicator_test",
     "observations": [
       "red litmus turns blue"
@@ -364,7 +364,7 @@
     "products": [
       "copper(ii) oxide"
     ],
-    "balanced_equation": "2Cu + O₂ (heat) → 2CuO",
+    "balanced_equation": "2\\mathrm{Cu} + \\mathrm{O}_2 \\text{ (heat)} \\rightarrow 2\\mathrm{CuO}",
     "type": "decomposition",
     "observations": [
       "reddish-brown copper turns black on heating"
@@ -388,7 +388,7 @@
       "sulphur dioxide",
       "sulphur trioxide"
     ],
-    "balanced_equation": "2FeSO₄ (heat) → Fe₂O₃ + SO₂ + SO₃",
+    "balanced_equation": "2\\mathrm{FeSO}_4 \\text{ (heat)} \\rightarrow \\mathrm{Fe}_2\\mathrm{O}_3 + \\mathrm{SO}_2 + \\mathrm{SO}_3",
     "type": "decomposition",
     "observations": [
       "green crystals first lose water",
@@ -412,7 +412,7 @@
     "products": [
       "calcium hydroxide"
     ],
-    "balanced_equation": "CaO + H₂O → Ca(OH)₂",
+    "balanced_equation": "\\mathrm{CaO} + \\mathrm{H}_2\\mathrm{O} \\rightarrow \\mathrm{Ca}(\\mathrm{OH})_2",
     "type": "combination",
     "observations": [
       "hissing sound",
@@ -436,7 +436,7 @@
     "products": [
       "ammonium chloride"
     ],
-    "balanced_equation": "NH₃ + HCl → NH₄Cl",
+    "balanced_equation": "\\mathrm{NH}_3 + \\mathrm{HCl} \\rightarrow \\mathrm{NH}_4\\mathrm{Cl}",
     "type": "combination",
     "observations": [
       "dense white fumes of ammonium chloride"
@@ -459,7 +459,7 @@
       "zinc sulphate",
       "copper"
     ],
-    "balanced_equation": "Zn + CuSO₄ → ZnSO₄ + Cu",
+    "balanced_equation": "\\mathrm{Zn} + \\mathrm{CuSO}_4 \\rightarrow \\mathrm{ZnSO}_4 + \\mathrm{Cu}",
     "type": "single_displacement",
     "observations": [
       "blue solution fades",
@@ -483,7 +483,7 @@
       "ferrous chloride",
       "hydrogen gas"
     ],
-    "balanced_equation": "Fe + 2HCl → FeCl₂ + H₂↑",
+    "balanced_equation": "\\mathrm{Fe} + 2\\mathrm{HCl} \\rightarrow \\mathrm{FeCl}_2 + \\mathrm{H}_2\\uparrow",
     "type": "single_displacement",
     "observations": [
       "slow effervescence",
@@ -508,7 +508,7 @@
       "water",
       "carbon dioxide"
     ],
-    "balanced_equation": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑",
+    "balanced_equation": "\\mathrm{Na}_2\\mathrm{CO}_3 + 2\\mathrm{HCl} \\rightarrow 2\\mathrm{NaCl} + \\mathrm{H}_2\\mathrm{O} + \\mathrm{CO}_2\\uparrow",
     "type": "double_displacement",
     "observations": [
       "brisk effervescence",
@@ -531,7 +531,7 @@
       "water",
       "oxygen"
     ],
-    "balanced_equation": "2H₂O₂ → 2H₂O + O₂↑",
+    "balanced_equation": "2\\mathrm{H}_2\\mathrm{O}_2 \\rightarrow 2\\mathrm{H}_2\\mathrm{O} + \\mathrm{O}_2\\uparrow",
     "type": "decomposition",
     "observations": [
       "oxygen bubbles evolve",
@@ -555,7 +555,7 @@
       "sodium aluminate",
       "hydrogen gas"
     ],
-    "balanced_equation": "2Al + 2NaOH + 2H₂O → 2NaAlO₂ + 3H₂↑",
+    "balanced_equation": "2\\mathrm{Al} + 2\\mathrm{NaOH} + 2\\mathrm{H}_2\\mathrm{O} \\rightarrow 2\\mathrm{NaAlO}_2 + 3\\mathrm{H}_2\\uparrow",
     "type": "special",
     "observations": [
       "aluminium dissolves in alkali",
@@ -578,7 +578,7 @@
     "products": [
       "ph-dependent color"
     ],
-    "balanced_equation": "Universal indicator + solution → color based on pH",
+    "balanced_equation": "\\text{Universal indicator + solution} \\rightarrow \\text{color based on pH}",
     "type": "indicator_test",
     "observations": [
       "acidic solutions turn red/orange",
@@ -602,7 +602,7 @@
     "products": [
       "colorless phenolphthalein solution"
     ],
-    "balanced_equation": "Phenolphthalein (pink in base) + HCl → Colorless solution",
+    "balanced_equation": "\\text{Phenolphthalein (pink in base) + HCl} \\rightarrow \\text{Colorless solution}",
     "type": "indicator_test",
     "observations": [
       "pink color disappears",
@@ -625,7 +625,7 @@
     "products": [
       "pink phenolphthalein solution"
     ],
-    "balanced_equation": "Phenolphthalein + NaOH → Pink solution",
+    "balanced_equation": "\\text{Phenolphthalein + NaOH} \\rightarrow \\text{Pink solution}",
     "type": "indicator_test",
     "observations": [
       "solution turns pink",
@@ -648,7 +648,7 @@
     "products": [
       "red methyl orange solution"
     ],
-    "balanced_equation": "Methyl orange + HCl → Red solution",
+    "balanced_equation": "\\text{Methyl orange + HCl} \\rightarrow \\text{Red solution}",
     "type": "indicator_test",
     "observations": [
       "orange solution turns red"
@@ -670,7 +670,7 @@
     "products": [
       "yellow methyl orange solution"
     ],
-    "balanced_equation": "Methyl orange + NaOH → Yellow solution",
+    "balanced_equation": "\\text{Methyl orange + NaOH} \\rightarrow \\text{Yellow solution}",
     "type": "indicator_test",
     "observations": [
       "orange solution turns yellow"
@@ -693,7 +693,7 @@
     "products": [
       "hydrated iron(iii) oxide (rust)"
     ],
-    "balanced_equation": "4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O",
+    "balanced_equation": "4\\mathrm{Fe} + 3\\mathrm{O}_2 + \\mathrm{xH}_2\\mathrm{O} \\rightarrow 2\\mathrm{Fe}_2\\mathrm{O}_3\\cdot \\mathrm{xH}_2\\mathrm{O}",
     "type": "special",
     "observations": [
       "reddish-brown flaky layer forms",
@@ -717,7 +717,7 @@
       "carbon dioxide",
       "water"
     ],
-    "balanced_equation": "Paraffin wax + O₂ → CO₂ + H₂O + heat + light",
+    "balanced_equation": "\\mathrm{Paraffin} \\mathrm{wax} + \\mathrm{O}_2 \\rightarrow \\mathrm{CO}_2 + \\mathrm{H}_2\\mathrm{O} + \\mathrm{heat} + \\mathrm{light}",
     "type": "combustion",
     "observations": [
       "steady yellow flame",
@@ -742,7 +742,7 @@
       "water",
       "carbon dioxide"
     ],
-    "balanced_equation": "CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂↑",
+    "balanced_equation": "\\mathrm{CH}_3\\mathrm{COOH} + \\mathrm{NaHCO}_3 \\rightarrow \\mathrm{CH}_3\\mathrm{COONa} + \\mathrm{H}_2\\mathrm{O} + \\mathrm{CO}_2\\uparrow",
     "type": "double_displacement",
     "observations": [
       "brisk effervescence",
@@ -766,7 +766,7 @@
       "magnesium sulphate",
       "hydrogen gas"
     ],
-    "balanced_equation": "Mg + H₂SO₄ → MgSO₄ + H₂↑",
+    "balanced_equation": "\\mathrm{Mg} + \\mathrm{H}_2\\mathrm{SO}_4 \\rightarrow \\mathrm{MgSO}_4 + \\mathrm{H}_2\\uparrow",
     "type": "single_displacement",
     "observations": [
       "rapid bubbling",
@@ -790,7 +790,7 @@
       "aluminium chloride",
       "hydrogen gas"
     ],
-    "balanced_equation": "2Al + 6HCl → 2AlCl₃ + 3H₂↑",
+    "balanced_equation": "2\\mathrm{Al} + 6\\mathrm{HCl} \\rightarrow 2\\mathrm{AlCl}_3 + 3\\mathrm{H}_2\\uparrow",
     "type": "single_displacement",
     "observations": [
       "slow initial reaction due to oxide layer",
@@ -814,7 +814,7 @@
       "magnesium sulphate",
       "copper"
     ],
-    "balanced_equation": "Mg + CuSO₄ → MgSO₄ + Cu",
+    "balanced_equation": "\\mathrm{Mg} + \\mathrm{CuSO}_4 \\rightarrow \\mathrm{MgSO}_4 + \\mathrm{Cu}",
     "type": "single_displacement",
     "observations": [
       "blue solution decolorizes",
@@ -838,7 +838,7 @@
       "aluminium sulphate",
       "copper"
     ],
-    "balanced_equation": "2Al + 3CuSO₄ → Al₂(SO₄)₃ + 3Cu",
+    "balanced_equation": "2\\mathrm{Al} + 3\\mathrm{CuSO}_4 \\rightarrow \\mathrm{Al}_2(\\mathrm{SO}_4)_3 + 3\\mathrm{Cu}",
     "type": "single_displacement",
     "observations": [
       "blue solution fades",
@@ -862,7 +862,7 @@
       "zinc nitrate",
       "silver"
     ],
-    "balanced_equation": "Zn + 2AgNO₃ → Zn(NO₃)₂ + 2Ag",
+    "balanced_equation": "\\mathrm{Zn} + 2\\mathrm{AgNO}_3 \\rightarrow \\mathrm{Zn}(\\mathrm{NO}_3)_2 + 2\\mathrm{Ag}",
     "type": "single_displacement",
     "observations": [
       "silver crystals deposit",
@@ -886,7 +886,7 @@
       "iron(ii) nitrate",
       "silver"
     ],
-    "balanced_equation": "Fe + 2AgNO₃ → Fe(NO₃)₂ + 2Ag",
+    "balanced_equation": "\\mathrm{Fe} + 2\\mathrm{AgNO}_3 \\rightarrow \\mathrm{Fe}(\\mathrm{NO}_3)_2 + 2\\mathrm{Ag}",
     "type": "single_displacement",
     "observations": [
       "silver deposition on iron",
@@ -900,7 +900,6 @@
     "difficulty_level": "class_10",
     "ncert_reference": "Class 10, Chapter 3: Metals and Non-metals"
   },
-
   "cu_hcl_041": {
     "reactants_key": "copper|hydrochloric acid",
     "reactants": [
@@ -910,7 +909,7 @@
     "products": [
       "no reaction"
     ],
-    "balanced_equation": "Cu + HCl → No reaction",
+    "balanced_equation": "\\mathrm{Cu} + \\mathrm{HCl} \\rightarrow \\mathrm{No} \\mathrm{reaction}",
     "type": "special",
     "observations": [
       "no bubbles",
@@ -934,7 +933,7 @@
       "zinc nitrate",
       "lead"
     ],
-    "balanced_equation": "Zn + Pb(NO₃)₂ → Zn(NO₃)₂ + Pb",
+    "balanced_equation": "\\mathrm{Zn} + \\mathrm{Pb}(\\mathrm{NO}_3)_2 \\rightarrow \\mathrm{Zn}(\\mathrm{NO}_3)_2 + \\mathrm{Pb}",
     "type": "single_displacement",
     "observations": [
       "grey lead deposits on zinc strip"
@@ -956,7 +955,7 @@
     "products": [
       "no reaction"
     ],
-    "balanced_equation": "Zn + NaCl → No reaction",
+    "balanced_equation": "\\mathrm{Zn} + \\mathrm{NaCl} \\rightarrow \\mathrm{No} \\mathrm{reaction}",
     "type": "special",
     "observations": [
       "no visible change"
@@ -979,7 +978,7 @@
       "barium sulphate",
       "sodium nitrate"
     ],
-    "balanced_equation": "Ba(NO₃)₂ + Na₂SO₄ → BaSO₄↓ + 2NaNO₃",
+    "balanced_equation": "\\mathrm{Ba}(\\mathrm{NO}_3)_2 + \\mathrm{Na}_2\\mathrm{SO}_4 \\rightarrow \\mathrm{BaSO}_4\\downarrow + 2\\mathrm{NaNO}_3",
     "type": "precipitation",
     "observations": [
       "dense white precipitate forms immediately"
@@ -1002,7 +1001,7 @@
       "calcium carbonate",
       "sodium chloride"
     ],
-    "balanced_equation": "CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2NaCl",
+    "balanced_equation": "\\mathrm{CaCl}_2 + \\mathrm{Na}_2\\mathrm{CO}_3 \\rightarrow \\mathrm{CaCO}_3\\downarrow + 2\\mathrm{NaCl}",
     "type": "precipitation",
     "observations": [
       "milky white precipitate appears"
@@ -1025,7 +1024,7 @@
       "copper(ii) hydroxide",
       "sodium sulphate"
     ],
-    "balanced_equation": "CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄",
+    "balanced_equation": "\\mathrm{CuSO}_4 + 2\\mathrm{NaOH} \\rightarrow \\mathrm{Cu}(\\mathrm{OH})_2\\downarrow + \\mathrm{Na}_2\\mathrm{SO}_4",
     "type": "precipitation",
     "observations": [
       "light blue gelatinous precipitate forms"
@@ -1048,7 +1047,7 @@
       "ferric hydroxide",
       "sodium chloride"
     ],
-    "balanced_equation": "FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl",
+    "balanced_equation": "\\mathrm{FeCl}_3 + 3\\mathrm{NaOH} \\rightarrow \\mathrm{Fe}(\\mathrm{OH})_3\\downarrow + 3\\mathrm{NaCl}",
     "type": "precipitation",
     "observations": [
       "reddish-brown precipitate forms"
@@ -1071,7 +1070,7 @@
       "zinc hydroxide",
       "sodium sulphate"
     ],
-    "balanced_equation": "ZnSO₄ + 2NaOH → Zn(OH)₂↓ + Na₂SO₄",
+    "balanced_equation": "\\mathrm{ZnSO}_4 + 2\\mathrm{NaOH} \\rightarrow \\mathrm{Zn}(\\mathrm{OH})_2\\downarrow + \\mathrm{Na}_2\\mathrm{SO}_4",
     "type": "precipitation",
     "observations": [
       "white precipitate appears"
@@ -1094,7 +1093,7 @@
       "silver",
       "chlorine gas"
     ],
-    "balanced_equation": "2AgCl → 2Ag + Cl₂↑ (sunlight)",
+    "balanced_equation": "2\\mathrm{AgCl} \\rightarrow 2\\mathrm{Ag} + \\mathrm{Cl}_2\\uparrow (\\mathrm{sunlight})",
     "type": "decomposition",
     "observations": [
       "white AgCl turns grey",
@@ -1117,7 +1116,7 @@
       "zinc oxide",
       "carbon dioxide"
     ],
-    "balanced_equation": "ZnCO₃ → ZnO + CO₂↑",
+    "balanced_equation": "\\mathrm{ZnCO}_3 \\rightarrow \\mathrm{ZnO} + \\mathrm{CO}_2\\uparrow",
     "type": "decomposition",
     "observations": [
       "solid residue remains",
@@ -1140,7 +1139,7 @@
       "calcium oxide",
       "carbon dioxide"
     ],
-    "balanced_equation": "CaCO₃ → CaO + CO₂↑",
+    "balanced_equation": "\\mathrm{CaCO}_3 \\rightarrow \\mathrm{CaO} + \\mathrm{CO}_2\\uparrow",
     "type": "decomposition",
     "observations": [
       "limestone decomposes on strong heating"
@@ -1162,7 +1161,7 @@
       "hydrogen",
       "oxygen"
     ],
-    "balanced_equation": "2H₂O → 2H₂ + O₂ (electricity)",
+    "balanced_equation": "2\\mathrm{H}_2\\mathrm{O} \\rightarrow 2\\mathrm{H}_2 + \\mathrm{O}_2 (\\mathrm{electricity})",
     "type": "decomposition",
     "observations": [
       "bubbles at both electrodes",
@@ -1186,7 +1185,7 @@
       "potassium sulphate",
       "water"
     ],
-    "balanced_equation": "2KOH + H₂SO₄ → K₂SO₄ + 2H₂O",
+    "balanced_equation": "2\\mathrm{KOH} + \\mathrm{H}_2\\mathrm{SO}_4 \\rightarrow \\mathrm{K}_2\\mathrm{SO}_4 + 2\\mathrm{H}_2\\mathrm{O}",
     "type": "neutralization",
     "observations": [
       "temperature rises",
@@ -1210,7 +1209,7 @@
       "sodium nitrate",
       "water"
     ],
-    "balanced_equation": "HNO₃ + NaOH → NaNO₃ + H₂O",
+    "balanced_equation": "\\mathrm{HNO}_3 + \\mathrm{NaOH} \\rightarrow \\mathrm{NaNO}_3 + \\mathrm{H}_2\\mathrm{O}",
     "type": "neutralization",
     "observations": [
       "solution warms slightly"
@@ -1233,7 +1232,7 @@
       "sodium acetate",
       "water"
     ],
-    "balanced_equation": "CH₃COOH + NaOH → CH₃COONa + H₂O",
+    "balanced_equation": "\\mathrm{CH}_3\\mathrm{COOH} + \\mathrm{NaOH} \\rightarrow \\mathrm{CH}_3\\mathrm{COONa} + \\mathrm{H}_2\\mathrm{O}",
     "type": "neutralization",
     "observations": [
       "mild temperature rise",
@@ -1257,7 +1256,7 @@
       "ammonium chloride",
       "water"
     ],
-    "balanced_equation": "NH₄OH + HCl → NH₄Cl + H₂O",
+    "balanced_equation": "\\mathrm{NH}_4\\mathrm{OH} + \\mathrm{HCl} \\rightarrow \\mathrm{NH}_4\\mathrm{Cl} + \\mathrm{H}_2\\mathrm{O}",
     "type": "neutralization",
     "observations": [
       "pungent smell of ammonia disappears"
@@ -1279,7 +1278,7 @@
     "products": [
       "rust"
     ],
-    "balanced_equation": "4Fe + 3O₂ + xH₂O → 2Fe₂O₃·xH₂O",
+    "balanced_equation": "4\\mathrm{Fe} + 3\\mathrm{O}_2 + \\mathrm{xH}_2\\mathrm{O} \\rightarrow 2\\mathrm{Fe}_2\\mathrm{O}_3\\cdot \\mathrm{xH}_2\\mathrm{O}",
     "type": "special",
     "observations": [
       "reddish-brown coating on iron"
@@ -1301,7 +1300,7 @@
     "products": [
       "oxidized rancid compounds"
     ],
-    "balanced_equation": "Unsaturated fats + O₂ → Peroxides and aldehydes (rancid products)",
+    "balanced_equation": "\\mathrm{Unsaturated} \\mathrm{fats} + \\mathrm{O}_2 \\rightarrow \\mathrm{Peroxides} \\mathrm{and} \\mathrm{aldehydes} (\\mathrm{rancid} \\mathrm{products})",
     "type": "special",
     "observations": [
       "unpleasant smell develops",
@@ -1324,7 +1323,7 @@
     "products": [
       "ammonia"
     ],
-    "balanced_equation": "N₂ + 3H₂ ⇌ 2NH₃",
+    "balanced_equation": "\\mathrm{N}_2 + 3\\mathrm{H}_2 ⇌ 2\\mathrm{NH}_3",
     "type": "combination",
     "observations": [
       "ammonia formed under high pressure and catalyst"
@@ -1346,7 +1345,7 @@
     "products": [
       "sulphur trioxide"
     ],
-    "balanced_equation": "2SO₂ + O₂ ⇌ 2SO₃",
+    "balanced_equation": "2\\mathrm{SO}_2 + \\mathrm{O}_2 ⇌ 2\\mathrm{SO}_3",
     "type": "combination",
     "observations": [
       "conversion increases with V₂O₅ catalyst"
@@ -1368,7 +1367,7 @@
     "products": [
       "nitrogen dioxide"
     ],
-    "balanced_equation": "2NO + O₂ → 2NO₂",
+    "balanced_equation": "2\\mathrm{NO} + \\mathrm{O}_2 \\rightarrow 2\\mathrm{NO}_2",
     "type": "combination",
     "observations": [
       "colorless gas turns brown"
@@ -1391,7 +1390,7 @@
       "carbon dioxide",
       "water"
     ],
-    "balanced_equation": "2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O",
+    "balanced_equation": "2\\mathrm{C}_2\\mathrm{H}_6 + 7\\mathrm{O}_2 \\rightarrow 4\\mathrm{CO}_2 + 6\\mathrm{H}_2\\mathrm{O}",
     "type": "combustion",
     "observations": [
       "clean blue flame",
@@ -1415,7 +1414,7 @@
       "carbon dioxide",
       "water"
     ],
-    "balanced_equation": "C₂H₄ + 3O₂ → 2CO₂ + 2H₂O",
+    "balanced_equation": "\\mathrm{C}_2\\mathrm{H}_4 + 3\\mathrm{O}_2 \\rightarrow 2\\mathrm{CO}_2 + 2\\mathrm{H}_2\\mathrm{O}",
     "type": "combustion",
     "observations": [
       "luminous flame in limited oxygen",
@@ -1438,7 +1437,7 @@
     "products": [
       "ethane"
     ],
-    "balanced_equation": "C₂H₄ + H₂ → C₂H₆ (Ni catalyst)",
+    "balanced_equation": "\\mathrm{C}_2\\mathrm{H}_4 + \\mathrm{H}_2 \\rightarrow \\mathrm{C}_2\\mathrm{H}_6 (\\mathrm{Ni} \\mathrm{catalyst})",
     "type": "combination",
     "observations": [
       "decolorized unsaturation test after reaction"
@@ -1460,7 +1459,7 @@
     "products": [
       "1,2-dibromoethane"
     ],
-    "balanced_equation": "C₂H₄ + Br₂ → C₂H₄Br₂",
+    "balanced_equation": "\\mathrm{C}_2\\mathrm{H}_4 + \\mathrm{Br}_2 \\rightarrow \\mathrm{C}_2\\mathrm{H}_4\\mathrm{Br}_2",
     "type": "combination",
     "observations": [
       "bromine water decolorizes"
@@ -1483,7 +1482,7 @@
       "glycerol",
       "soap"
     ],
-    "balanced_equation": "Fat/Oil + 3NaOH → Glycerol + 3Soap (sodium salts)",
+    "balanced_equation": "\\mathrm{Fat}/\\mathrm{Oil} + 3\\mathrm{NaOH} \\rightarrow \\mathrm{Glycerol} + 3\\mathrm{Soap} (\\mathrm{sodium} \\mathrm{salts})",
     "type": "special",
     "observations": [
       "thick soapy mixture forms",
@@ -1507,7 +1506,7 @@
       "ethyl acetate",
       "water"
     ],
-    "balanced_equation": "CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O",
+    "balanced_equation": "\\mathrm{CH}_3\\mathrm{COOH} + \\mathrm{C}_2\\mathrm{H}_5\\mathrm{OH} ⇌ \\mathrm{CH}_3\\mathrm{COOC}_2\\mathrm{H}_5 + \\mathrm{H}_2\\mathrm{O}",
     "type": "special",
     "observations": [
       "pleasant fruity smell appears",
@@ -1531,7 +1530,7 @@
       "ethanol",
       "carbon dioxide"
     ],
-    "balanced_equation": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂↑",
+    "balanced_equation": "\\mathrm{C}_6\\mathrm{H}_1_2\\mathrm{O}_6 \\rightarrow 2\\mathrm{C}_2\\mathrm{H}_5\\mathrm{OH} + 2\\mathrm{CO}_2\\uparrow",
     "type": "decomposition",
     "observations": [
       "slow bubbling",

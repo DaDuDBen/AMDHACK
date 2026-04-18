@@ -1,8 +1,7 @@
-function assetUrl(animationAsset) {
-  return animationAsset ? `/src/assets/animations/${animationAsset}` : null;
-}
+import ReactionAnimation from './ReactionAnimation.jsx';
+import { BlockMath } from 'react-katex';
 
-export default function VisualizationPanel({ loading, simulation, visualization }) {
+export default function VisualizationPanel({ loading, simulation, visualization, isFollowup }) {
   if (loading) {
     return (
       <section className="rounded-xl border border-slate-200 bg-white p-4">
@@ -14,6 +13,10 @@ export default function VisualizationPanel({ loading, simulation, visualization 
     );
   }
 
+  if (isFollowup) {
+    return null;
+  }
+
   if (!simulation) {
     return (
       <section className="rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-500">
@@ -22,19 +25,29 @@ export default function VisualizationPanel({ loading, simulation, visualization 
     );
   }
 
-  const animationSrc = assetUrl(visualization?.animation_asset);
-
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-4">
       <h3 className="mb-3 text-base font-semibold text-slate-800">Simulation Result</h3>
-      {animationSrc ? (
-        <div className="mb-4 rounded-lg border border-slate-100 bg-slate-50 p-3 text-xs text-slate-600">
-          Animation asset: {visualization.animation_asset}
-          <div className="mt-1 break-all">{animationSrc}</div>
-        </div>
-      ) : null}
 
-      <p className="mb-2 text-sm text-slate-800"><strong>Equation:</strong> {simulation.balanced_equation}</p>
+      {visualization?.animation_asset && (
+        <div className="mb-5">
+          <ReactionAnimation
+            asset={visualization.animation_asset}
+            colorOverlay={visualization.color_overlay}
+            intensity={visualization.intensity}
+            showThermometer={visualization.show_thermometer}
+            thermometerDirection={visualization.thermometer_direction}
+            thermodynamics={simulation.thermodynamics}
+          />
+        </div>
+      )}
+
+      <div className="mb-4 rounded-lg bg-slate-50 p-3 shadow-inner">
+        <p className="mb-2 text-sm text-slate-800 font-semibold">Equation:</p>
+        <div className="overflow-x-auto">
+          <BlockMath math={simulation.balanced_equation} />
+        </div>
+      </div>
       <p className="mb-2 text-sm text-slate-700"><strong>Thermodynamics:</strong> {simulation.thermodynamics}</p>
       <p className="mb-2 text-sm text-slate-700"><strong>Reactants:</strong> {simulation.reactants.join(', ')}</p>
       <p className="mb-2 text-sm text-slate-700"><strong>Products:</strong> {simulation.products.join(', ')}</p>
