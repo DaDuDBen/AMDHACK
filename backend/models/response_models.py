@@ -20,6 +20,7 @@ class SimulationPayload(BaseModel):
     products: list[str]
     observations: list[str]
     thermodynamics: str
+    type: str = ""
 
     model_config = ConfigDict(extra="forbid")
 

@@ -12,9 +12,15 @@
     "severity": "danger"
   },
   {
-    "keywords": ["thermite", "aluminum powder", "iron oxide"],
+    "keywords": ["thermite"],
     "reason": "Thermite reactions generate extremely high temperatures and molten metal.",
     "educational_note": "This redox reaction is used in industrial welding, not standard school labs, because it is difficult to control once started.",
+    "severity": "danger"
+  },
+  {
+    "keywords": ["aluminum powder", "iron oxide"],
+    "reason": "Mixing aluminum powder with iron oxide is the thermite reaction which generates extremely high temperatures and molten metal.",
+    "educational_note": "This combination produces the thermite reaction used in industrial welding — it is not a safe school experiment.",
     "severity": "danger"
   },
   {

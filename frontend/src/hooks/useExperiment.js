@@ -44,7 +44,7 @@ export function useExperiment() {
           animation_type: result.visualization?.animation_asset?.replace('.json', '') || 'no_reaction',
           difficulty_level: 'class_10',
           ncert_reference: result.explanation?.ncert_reference || '',
-          type: result.explanation?.key_concept || '',
+          type: result.simulation.type || '',
         };
       }
 

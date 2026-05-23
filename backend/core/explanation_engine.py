@@ -178,6 +178,15 @@ def _followup_template(simulation_result: dict[str, Any], question: str) -> dict
         }
 
 
+def _strip_code_fences(text: str) -> str:
+    import re
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    return text.strip()
+
+
 async def _generate_with_claude(prompt: str) -> dict[str, Any]:
     from anthropic import AsyncAnthropic
 
@@ -190,7 +199,7 @@ async def _generate_with_claude(prompt: str) -> dict[str, Any]:
         messages=[{"role": "user", "content": prompt}],
     )
     content = "".join(block.text for block in response.content if getattr(block, "type", "") == "text")
-    return json.loads(content.strip())
+    return json.loads(_strip_code_fences(content))
 
 
 async def _generate_with_groq(prompt: str) -> dict[str, Any]:
