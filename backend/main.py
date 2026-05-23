@@ -53,8 +53,19 @@ app.add_middleware(
 
 @app.on_event("startup")
 def _startup_load_data() -> None:
-    reactions_data = _load_json_file(REACTIONS_FILE)
-    safety_rules = _load_json_file(SAFETY_BLOCKLIST_FILE)
+    try:
+        reactions_data = _load_json_file(REACTIONS_FILE)
+    except FileNotFoundError:
+        raise RuntimeError(f"Reactions data file not found: {REACTIONS_FILE}") from None
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Reactions data file contains invalid JSON: {exc}") from exc
+
+    try:
+        safety_rules = _load_json_file(SAFETY_BLOCKLIST_FILE)
+    except FileNotFoundError:
+        raise RuntimeError(f"Safety blocklist file not found: {SAFETY_BLOCKLIST_FILE}") from None
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Safety blocklist file contains invalid JSON: {exc}") from exc
 
     app.state.reactions_data = reactions_data
     app.state.safety_rules = safety_rules

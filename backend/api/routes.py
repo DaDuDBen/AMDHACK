@@ -33,8 +33,12 @@ router = APIRouter()
 
 OLLAMA_TIMEOUT_SECONDS = 10.0
 
+_runtime_llm_mode: str | None = None
+
 
 def _llm_mode() -> str:
+    if _runtime_llm_mode is not None:
+        return _runtime_llm_mode
     return os.getenv("LLM_MODE", "offline").strip().lower() or "offline"
 
 
@@ -97,7 +101,7 @@ async def run_experiment(payload: ExperimentRequest):
         )
 
     # 5) No reactants, no context → can't understand
-    if not reactants and not action and not parsed.get("conditions"):
+    if not reactants:
         return JSONResponse(status_code=400, content={"error": "Could not understand input"})
 
     # 6) Simulation — 100% local, uses reactions.json only
@@ -116,6 +120,7 @@ async def run_experiment(payload: ExperimentRequest):
         products=simulation["products"],
         observations=simulation["observations"],
         thermodynamics=simulation["thermodynamics"],
+        type=simulation.get("type", ""),
     )
 
     # 7) Visualization + explanation
@@ -179,7 +184,8 @@ async def switch_mode(body: dict):
             content={"error": f"Invalid mode. Valid modes: {', '.join(sorted(valid_modes))}"},
         )
 
-    os.environ["LLM_MODE"] = new_mode
+    global _runtime_llm_mode
+    _runtime_llm_mode = new_mode
     logger.info("LLM mode switched to: %s", new_mode)
 
     return {
